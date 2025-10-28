@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{872448C9-59C4-4B1D-8DE1-6F345D56BB29}</ProjectGuid>
+    <ProjectGuid>{EE5ED76B-CA14-419F-929B-E17DD2E0810E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CapaLogica</RootNamespace>
-    <AssemblyName>CapaLogica</AssemblyName>
+    <RootNamespace>CapaEntidad</RootNamespace>
+    <AssemblyName>CapaEntidad</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
