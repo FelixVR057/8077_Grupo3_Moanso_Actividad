@@ -36,7 +36,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbFecha = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtruc = new System.Windows.Forms.TextBox();
+            this.txtRuc = new System.Windows.Forms.TextBox();
             this.lbRuc = new System.Windows.Forms.Label();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -60,13 +60,15 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(637, 346);
+            this.btnNuevo.Location = new System.Drawing.Point(38, 600);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(145, 42);
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // dgvCompra
             // 
@@ -77,30 +79,33 @@
             this.dgvCompra.Name = "dgvCompra";
             this.dgvCompra.RowHeadersWidth = 62;
             this.dgvCompra.RowTemplate.Height = 28;
-            this.dgvCompra.Size = new System.Drawing.Size(575, 221);
+            this.dgvCompra.Size = new System.Drawing.Size(773, 230);
             this.dgvCompra.TabIndex = 1;
+            this.dgvCompra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompra_CellClick);
             // 
             // btnAnular
             // 
             this.btnAnular.BackColor = System.Drawing.Color.Red;
             this.btnAnular.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAnular.Location = new System.Drawing.Point(637, 394);
+            this.btnAnular.Location = new System.Drawing.Point(197, 600);
             this.btnAnular.Name = "btnAnular";
             this.btnAnular.Size = new System.Drawing.Size(145, 42);
             this.btnAnular.TabIndex = 2;
             this.btnAnular.Text = "Anular";
             this.btnAnular.UseVisualStyleBackColor = false;
+            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(637, 525);
+            this.btnSalir.Location = new System.Drawing.Point(698, 600);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(145, 42);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // groupBox1
@@ -108,7 +113,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.lbFecha);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.txtruc);
+            this.groupBox1.Controls.Add(this.txtRuc);
             this.groupBox1.Controls.Add(this.lbRuc);
             this.groupBox1.Controls.Add(this.btnLimpiarCampos);
             this.groupBox1.Controls.Add(this.txtPrecio);
@@ -149,12 +154,12 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(191, 20);
             this.dateTimePicker1.TabIndex = 17;
             // 
-            // txtruc
+            // txtRuc
             // 
-            this.txtruc.Location = new System.Drawing.Point(408, 32);
-            this.txtruc.Name = "txtruc";
-            this.txtruc.Size = new System.Drawing.Size(139, 20);
-            this.txtruc.TabIndex = 16;
+            this.txtRuc.Location = new System.Drawing.Point(408, 32);
+            this.txtRuc.Name = "txtRuc";
+            this.txtRuc.Size = new System.Drawing.Size(139, 20);
+            this.txtRuc.TabIndex = 16;
             // 
             // lbRuc
             // 
@@ -178,6 +183,7 @@
             this.btnLimpiarCampos.TabIndex = 14;
             this.btnLimpiarCampos.Text = "Limpiar Campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = false;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
             // txtPrecio
             // 
@@ -210,13 +216,15 @@
             // 
             // btnModificar
             // 
+            this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(599, 58);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(145, 42);
             this.btnModificar.TabIndex = 7;
             this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // lbProducto
             // 
@@ -264,23 +272,27 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(599, 106);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(145, 42);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(599, 10);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(145, 42);
             this.btnRegistrar.TabIndex = 6;
             this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // imageList1
             // 
@@ -314,7 +326,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(855, 599);
+            this.ClientSize = new System.Drawing.Size(855, 654);
             this.Controls.Add(this.lbTitulo);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.groupBox1);
@@ -324,6 +336,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Name = "Form1";
             this.Text = "Registro de Compras";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -354,7 +367,7 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Button btnLimpiarCampos;
-        private System.Windows.Forms.TextBox txtruc;
+        private System.Windows.Forms.TextBox txtRuc;
         private System.Windows.Forms.Label lbRuc;
         private System.Windows.Forms.Label lbTitulo;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
