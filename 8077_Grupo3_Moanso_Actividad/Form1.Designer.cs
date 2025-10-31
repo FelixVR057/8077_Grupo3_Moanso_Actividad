@@ -100,7 +100,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(698, 600);
+            this.btnSalir.Location = new System.Drawing.Point(666, 600);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(145, 42);
             this.btnSalir.TabIndex = 4;
