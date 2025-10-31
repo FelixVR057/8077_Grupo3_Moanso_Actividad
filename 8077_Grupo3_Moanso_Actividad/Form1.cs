@@ -21,5 +21,24 @@ namespace _8077_Grupo3_Moanso_Actividad
         {
             this.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+         
+            try
+            {
+                DataTable dt = txtProveedor.Instancia.ListarProveedor();
+                txtProveedor.DataSource = dt;
+                txtProveedor.DisplayMember = "NombreProveedor";
+                txtProveedor.ValueMember = "IdProveedor";
+                txtProveedor.SelectedIndex = -1; // Ninguno seleccionado al inicio
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar proveedores: " + ex.Message);
+            }
+        }
+
     }
 }
+

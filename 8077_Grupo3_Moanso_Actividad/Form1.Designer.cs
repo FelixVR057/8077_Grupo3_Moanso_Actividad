@@ -61,8 +61,8 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(849, 459);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Location = new System.Drawing.Point(850, 426);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(193, 52);
             this.btnNuevo.TabIndex = 0;
@@ -73,12 +73,12 @@
             // 
             this.dgvCompra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCompra.Location = new System.Drawing.Point(51, 426);
+            this.dgvCompra.Location = new System.Drawing.Point(37, 408);
             this.dgvCompra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvCompra.Name = "dgvCompra";
             this.dgvCompra.RowHeadersWidth = 62;
             this.dgvCompra.RowTemplate.Height = 28;
-            this.dgvCompra.Size = new System.Drawing.Size(767, 272);
+            this.dgvCompra.Size = new System.Drawing.Size(792, 287);
             this.dgvCompra.TabIndex = 1;
             // 
             // btnAnular
@@ -86,8 +86,8 @@
             this.btnAnular.BackColor = System.Drawing.Color.Red;
             this.btnAnular.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAnular.Location = new System.Drawing.Point(849, 518);
-            this.btnAnular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnular.Location = new System.Drawing.Point(889, 13);
+            this.btnAnular.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnular.Name = "btnAnular";
             this.btnAnular.Size = new System.Drawing.Size(193, 52);
             this.btnAnular.TabIndex = 2;
@@ -97,8 +97,8 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(850, 608);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Location = new System.Drawing.Point(934, 672);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(193, 52);
             this.btnSalir.TabIndex = 4;
@@ -138,7 +138,7 @@
             // 
             this.lbFecha.AutoSize = true;
             this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFecha.Location = new System.Drawing.Point(471, 139);
+            this.lbFecha.Location = new System.Drawing.Point(450, 130);
             this.lbFecha.Name = "lbFecha";
             this.lbFecha.Size = new System.Drawing.Size(57, 17);
             this.lbFecha.TabIndex = 18;
@@ -146,8 +146,8 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(475, 176);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(453, 151);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(253, 22);
             this.dateTimePicker1.TabIndex = 17;
@@ -155,7 +155,7 @@
             // txtruc
             // 
             this.txtruc.Location = new System.Drawing.Point(544, 39);
-            this.txtruc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtruc.Margin = new System.Windows.Forms.Padding(4);
             this.txtruc.Name = "txtruc";
             this.txtruc.Size = new System.Drawing.Size(184, 22);
             this.txtruc.TabIndex = 16;
@@ -176,7 +176,7 @@
             this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiarCampos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLimpiarCampos.Location = new System.Drawing.Point(799, 190);
-            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(193, 52);
             this.btnLimpiarCampos.TabIndex = 14;
@@ -186,7 +186,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(171, 176);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(201, 22);
             this.txtPrecio.TabIndex = 13;
@@ -194,7 +194,7 @@
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(125, 130);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(247, 22);
             this.txtCantidad.TabIndex = 13;
@@ -202,7 +202,7 @@
             // txtProducto
             // 
             this.txtProducto.Location = new System.Drawing.Point(127, 86);
-            this.txtProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(601, 22);
             this.txtProducto.TabIndex = 13;
@@ -211,7 +211,7 @@
             // 
             this.txtProveedor.BackColor = System.Drawing.Color.White;
             this.txtProveedor.Location = new System.Drawing.Point(127, 39);
-            this.txtProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.txtProveedor.Name = "txtProveedor";
             this.txtProveedor.Size = new System.Drawing.Size(348, 22);
             this.txtProveedor.TabIndex = 13;
@@ -220,7 +220,7 @@
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(799, 71);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(193, 52);
             this.btnModificar.TabIndex = 7;
@@ -271,7 +271,7 @@
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(799, 130);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(193, 52);
             this.btnCancelar.TabIndex = 8;
@@ -282,7 +282,7 @@
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(799, 12);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(193, 52);
             this.btnRegistrar.TabIndex = 6;
@@ -299,7 +299,7 @@
             // 
             this.pictureBoxLogo.Image = global::_8077_Grupo3_Moanso_Actividad.Properties.Resources.LogoEmpresa3;
             this.pictureBoxLogo.Location = new System.Drawing.Point(16, 34);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(92, 84);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -329,9 +329,10 @@
             this.Controls.Add(this.btnAnular);
             this.Controls.Add(this.dgvCompra);
             this.Controls.Add(this.btnNuevo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Registro de Compras";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

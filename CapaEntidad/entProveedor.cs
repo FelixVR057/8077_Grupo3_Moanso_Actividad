@@ -8,8 +8,9 @@ namespace CapaEntidad
 {
     public class entProveedor
     {
-        public int Id_Prov { get; set; }
-        public string Nom_Prov { get; set; }
-        public string RUC_Prov { get; set; }
+        public int IdProveedor { get; set; }
+        public string NombreProveedor { get; set; }
+        public string RUC { get; set; }
+        public string Estado { get; set; }  // opcional
     }
 }
