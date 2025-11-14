@@ -40,12 +40,13 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.gbDatosProveedor = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnNuevoProv = new System.Windows.Forms.Button();
-            this.btnModificarProv = new System.Windows.Forms.Button();
-            this.btnBuscarProv = new System.Windows.Forms.Button();
             this.btnInhabilitarProv = new System.Windows.Forms.Button();
+            this.btnModificarProv = new System.Windows.Forms.Button();
+            this.btnNuevoProv = new System.Windows.Forms.Button();
+            this.btnBuscarProv = new System.Windows.Forms.Button();
             this.dgvMantenedorProv = new System.Windows.Forms.DataGridView();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.lbTituloProv = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.gbDatosProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorProv)).BeginInit();
@@ -139,6 +140,7 @@
             // 
             // gbDatosProveedor
             // 
+            this.gbDatosProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gbDatosProveedor.Controls.Add(this.dateTimePicker1);
             this.gbDatosProveedor.Controls.Add(this.textBox5);
             this.gbDatosProveedor.Controls.Add(this.btnInhabilitarProv);
@@ -153,9 +155,9 @@
             this.gbDatosProveedor.Controls.Add(this.label3);
             this.gbDatosProveedor.Controls.Add(this.label1);
             this.gbDatosProveedor.Controls.Add(this.label2);
-            this.gbDatosProveedor.Location = new System.Drawing.Point(91, 25);
+            this.gbDatosProveedor.Location = new System.Drawing.Point(40, 106);
             this.gbDatosProveedor.Name = "gbDatosProveedor";
-            this.gbDatosProveedor.Size = new System.Drawing.Size(714, 204);
+            this.gbDatosProveedor.Size = new System.Drawing.Size(765, 204);
             this.gbDatosProveedor.TabIndex = 11;
             this.gbDatosProveedor.TabStop = false;
             this.gbDatosProveedor.Text = "Datos del Proveedor";
@@ -167,58 +169,74 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 10;
             // 
-            // btnNuevoProv
-            // 
-            this.btnNuevoProv.Location = new System.Drawing.Point(591, 29);
-            this.btnNuevoProv.Name = "btnNuevoProv";
-            this.btnNuevoProv.Size = new System.Drawing.Size(107, 41);
-            this.btnNuevoProv.TabIndex = 12;
-            this.btnNuevoProv.Text = "Nuevo";
-            this.btnNuevoProv.UseVisualStyleBackColor = true;
-            // 
-            // btnModificarProv
-            // 
-            this.btnModificarProv.Location = new System.Drawing.Point(591, 86);
-            this.btnModificarProv.Name = "btnModificarProv";
-            this.btnModificarProv.Size = new System.Drawing.Size(107, 41);
-            this.btnModificarProv.TabIndex = 13;
-            this.btnModificarProv.Text = "Modificar";
-            this.btnModificarProv.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscarProv
-            // 
-            this.btnBuscarProv.Location = new System.Drawing.Point(711, 334);
-            this.btnBuscarProv.Name = "btnBuscarProv";
-            this.btnBuscarProv.Size = new System.Drawing.Size(107, 71);
-            this.btnBuscarProv.TabIndex = 14;
-            this.btnBuscarProv.Text = "Buscar Proveedor";
-            this.btnBuscarProv.UseVisualStyleBackColor = true;
-            // 
             // btnInhabilitarProv
             // 
-            this.btnInhabilitarProv.Location = new System.Drawing.Point(591, 143);
+            this.btnInhabilitarProv.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnInhabilitarProv.Location = new System.Drawing.Point(640, 153);
             this.btnInhabilitarProv.Name = "btnInhabilitarProv";
             this.btnInhabilitarProv.Size = new System.Drawing.Size(107, 41);
             this.btnInhabilitarProv.TabIndex = 15;
             this.btnInhabilitarProv.Text = "Inhabilitar Proveedor";
-            this.btnInhabilitarProv.UseVisualStyleBackColor = true;
+            this.btnInhabilitarProv.UseVisualStyleBackColor = false;
+            // 
+            // btnModificarProv
+            // 
+            this.btnModificarProv.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnModificarProv.Location = new System.Drawing.Point(640, 86);
+            this.btnModificarProv.Name = "btnModificarProv";
+            this.btnModificarProv.Size = new System.Drawing.Size(107, 41);
+            this.btnModificarProv.TabIndex = 13;
+            this.btnModificarProv.Text = "Modificar";
+            this.btnModificarProv.UseVisualStyleBackColor = false;
+            // 
+            // btnNuevoProv
+            // 
+            this.btnNuevoProv.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnNuevoProv.Location = new System.Drawing.Point(640, 26);
+            this.btnNuevoProv.Name = "btnNuevoProv";
+            this.btnNuevoProv.Size = new System.Drawing.Size(107, 41);
+            this.btnNuevoProv.TabIndex = 12;
+            this.btnNuevoProv.Text = "Nuevo";
+            this.btnNuevoProv.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscarProv
+            // 
+            this.btnBuscarProv.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscarProv.Location = new System.Drawing.Point(698, 399);
+            this.btnBuscarProv.Name = "btnBuscarProv";
+            this.btnBuscarProv.Size = new System.Drawing.Size(107, 71);
+            this.btnBuscarProv.TabIndex = 14;
+            this.btnBuscarProv.Text = "Buscar Proveedor";
+            this.btnBuscarProv.UseVisualStyleBackColor = false;
             // 
             // dgvMantenedorProv
             // 
             this.dgvMantenedorProv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMantenedorProv.Location = new System.Drawing.Point(34, 261);
+            this.dgvMantenedorProv.Location = new System.Drawing.Point(40, 334);
             this.dgvMantenedorProv.Name = "dgvMantenedorProv";
             this.dgvMantenedorProv.Size = new System.Drawing.Size(640, 234);
             this.dgvMantenedorProv.TabIndex = 16;
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(750, 498);
+            this.btnVolver.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnVolver.Location = new System.Drawing.Point(728, 555);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(107, 41);
             this.btnVolver.TabIndex = 17;
             this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.UseVisualStyleBackColor = false;
+            // 
+            // lbTituloProv
+            // 
+            this.lbTituloProv.AutoSize = true;
+            this.lbTituloProv.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTituloProv.Location = new System.Drawing.Point(225, 43);
+            this.lbTituloProv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTituloProv.Name = "lbTituloProv";
+            this.lbTituloProv.Size = new System.Drawing.Size(390, 37);
+            this.lbTituloProv.TabIndex = 18;
+            this.lbTituloProv.Text = "Registro de Proveedores";
             // 
             // pictureBoxLogo
             // 
@@ -234,7 +252,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 551);
+            this.ClientSize = new System.Drawing.Size(847, 608);
+            this.Controls.Add(this.lbTituloProv);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dgvMantenedorProv);
             this.Controls.Add(this.btnBuscarProv);
@@ -247,6 +266,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorProv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -271,5 +291,6 @@
         private System.Windows.Forms.Button btnInhabilitarProv;
         private System.Windows.Forms.DataGridView dgvMantenedorProv;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label lbTituloProv;
     }
 }

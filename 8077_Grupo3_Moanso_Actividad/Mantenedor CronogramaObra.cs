@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _8077_Grupo3_Moanso_Actividad
 {
-    public partial class MantenedorMaterial : Form
+    public partial class Mantenedor_CronogramaObra : Form
     {
-        public MantenedorMaterial()
+        public Mantenedor_CronogramaObra()
         {
             InitializeComponent();
         }

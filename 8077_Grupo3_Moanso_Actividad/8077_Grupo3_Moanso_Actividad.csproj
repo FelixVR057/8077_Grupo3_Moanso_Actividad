@@ -52,11 +52,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login Usuarios.cs">
+    <Compile Include="Mantenedor CronogramaObra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login Usuarios.Designer.cs">
-      <DependentUpon>Login Usuarios.cs</DependentUpon>
+    <Compile Include="Mantenedor CronogramaObra.Designer.cs">
+      <DependentUpon>Mantenedor CronogramaObra.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenedor Material.cs">
       <SubType>Form</SubType>
@@ -75,8 +75,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login Usuarios.resx">
-      <DependentUpon>Login Usuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Mantenedor CronogramaObra.resx">
+      <DependentUpon>Mantenedor CronogramaObra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor Material.resx">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>
