@@ -16,5 +16,10 @@ namespace _8077_Grupo3_Moanso_Actividad
         {
             InitializeComponent();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
