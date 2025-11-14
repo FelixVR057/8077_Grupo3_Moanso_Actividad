@@ -142,6 +142,14 @@ namespace _8077_Grupo3_Moanso_Actividad
                 dgvCompra.Columns["Id_Us"].Visible = false;
                 dgvCompra.Columns["Id_Prov"].Visible = false;
                 dgvCompra.Columns["Id_Mat"].Visible = false;
+
+                // Cambiar nombres de encabezados
+                dgvCompra.Columns["Nom_Prov"].HeaderText = "Proveedor";
+                dgvCompra.Columns["Nom_Mat"].HeaderText = "Producto";
+                dgvCompra.Columns["Cant_DetComp"].HeaderText = "Cantidad";
+                dgvCompra.Columns["PU_DetComp"].HeaderText = "Precio Unitario";
+                dgvCompra.Columns["Tot_Comp"].HeaderText = "Total";
+                dgvCompra.Columns["Fec_Comp"].HeaderText = "Fecha de Compra";
             }
             catch (Exception ex)
             {
