@@ -58,6 +58,12 @@
     <Compile Include="Login Registro.Designer.cs">
       <DependentUpon>Login Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login_Ingresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Ingresar.Designer.cs">
+      <DependentUpon>Login_Ingresar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenedor CronogramaObra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login Registro.resx">
       <DependentUpon>Login Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Ingresar.resx">
+      <DependentUpon>Login_Ingresar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor CronogramaObra.resx">
       <DependentUpon>Mantenedor CronogramaObra.cs</DependentUpon>
