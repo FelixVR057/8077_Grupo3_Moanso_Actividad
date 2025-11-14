@@ -1,6 +1,6 @@
 ﻿namespace _8077_Grupo3_Moanso_Actividad
 {
-    partial class Mantenedor_Material
+    partial class MantenedorMaterial
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gbDatosMaterial = new System.Windows.Forms.GroupBox();
+            this.cbUndMed = new System.Windows.Forms.ComboBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtDescMaterial = new System.Windows.Forms.TextBox();
             this.btnInhabilitarMat = new System.Windows.Forms.Button();
@@ -43,7 +44,7 @@
             this.dgvMantenedorMat = new System.Windows.Forms.DataGridView();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnBuscarMat = new System.Windows.Forms.Button();
-            this.cbUndMed = new System.Windows.Forms.ComboBox();
+            this.lbTituloMat = new System.Windows.Forms.Label();
             this.gbDatosMaterial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).BeginInit();
@@ -62,30 +63,38 @@
             this.gbDatosMaterial.Controls.Add(this.lbUni);
             this.gbDatosMaterial.Controls.Add(this.lbCodMat);
             this.gbDatosMaterial.Controls.Add(this.lbDescMat);
-            this.gbDatosMaterial.Location = new System.Drawing.Point(101, 35);
+            this.gbDatosMaterial.Location = new System.Drawing.Point(47, 104);
             this.gbDatosMaterial.Name = "gbDatosMaterial";
-            this.gbDatosMaterial.Size = new System.Drawing.Size(714, 204);
+            this.gbDatosMaterial.Size = new System.Drawing.Size(757, 204);
             this.gbDatosMaterial.TabIndex = 12;
             this.gbDatosMaterial.TabStop = false;
             this.gbDatosMaterial.Text = "Datos del Material";
+            // 
+            // cbUndMed
+            // 
+            this.cbUndMed.FormattingEnabled = true;
+            this.cbUndMed.Location = new System.Drawing.Point(171, 114);
+            this.cbUndMed.Name = "cbUndMed";
+            this.cbUndMed.Size = new System.Drawing.Size(132, 21);
+            this.cbUndMed.TabIndex = 16;
             // 
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(171, 164);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(113, 20);
+            this.txtStock.Size = new System.Drawing.Size(132, 20);
             this.txtStock.TabIndex = 9;
             // 
             // txtDescMaterial
             // 
             this.txtDescMaterial.Location = new System.Drawing.Point(171, 68);
             this.txtDescMaterial.Name = "txtDescMaterial";
-            this.txtDescMaterial.Size = new System.Drawing.Size(376, 20);
+            this.txtDescMaterial.Size = new System.Drawing.Size(402, 20);
             this.txtDescMaterial.TabIndex = 1;
             // 
             // btnInhabilitarMat
             // 
-            this.btnInhabilitarMat.Location = new System.Drawing.Point(591, 143);
+            this.btnInhabilitarMat.Location = new System.Drawing.Point(620, 143);
             this.btnInhabilitarMat.Name = "btnInhabilitarMat";
             this.btnInhabilitarMat.Size = new System.Drawing.Size(107, 41);
             this.btnInhabilitarMat.TabIndex = 15;
@@ -101,7 +110,7 @@
             // 
             // btnModificarProv
             // 
-            this.btnModificarProv.Location = new System.Drawing.Point(591, 86);
+            this.btnModificarProv.Location = new System.Drawing.Point(620, 86);
             this.btnModificarProv.Name = "btnModificarProv";
             this.btnModificarProv.Size = new System.Drawing.Size(107, 41);
             this.btnModificarProv.TabIndex = 13;
@@ -120,7 +129,7 @@
             // 
             // btnNuevoProv
             // 
-            this.btnNuevoProv.Location = new System.Drawing.Point(591, 29);
+            this.btnNuevoProv.Location = new System.Drawing.Point(620, 29);
             this.btnNuevoProv.Name = "btnNuevoProv";
             this.btnNuevoProv.Size = new System.Drawing.Size(107, 41);
             this.btnNuevoProv.TabIndex = 12;
@@ -170,14 +179,14 @@
             // dgvMantenedorMat
             // 
             this.dgvMantenedorMat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMantenedorMat.Location = new System.Drawing.Point(51, 245);
+            this.dgvMantenedorMat.Location = new System.Drawing.Point(47, 331);
             this.dgvMantenedorMat.Name = "dgvMantenedorMat";
             this.dgvMantenedorMat.Size = new System.Drawing.Size(638, 277);
             this.dgvMantenedorMat.TabIndex = 17;
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(737, 481);
+            this.btnVolver.Location = new System.Drawing.Point(735, 581);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(107, 41);
             this.btnVolver.TabIndex = 19;
@@ -186,38 +195,43 @@
             // 
             // btnBuscarMat
             // 
-            this.btnBuscarMat.Location = new System.Drawing.Point(718, 334);
+            this.btnBuscarMat.Location = new System.Drawing.Point(710, 417);
             this.btnBuscarMat.Name = "btnBuscarMat";
             this.btnBuscarMat.Size = new System.Drawing.Size(107, 71);
             this.btnBuscarMat.TabIndex = 18;
             this.btnBuscarMat.Text = "Buscar Material";
             this.btnBuscarMat.UseVisualStyleBackColor = true;
             // 
-            // cbUndMed
+            // lbTituloMat
             // 
-            this.cbUndMed.FormattingEnabled = true;
-            this.cbUndMed.Location = new System.Drawing.Point(171, 114);
-            this.cbUndMed.Name = "cbUndMed";
-            this.cbUndMed.Size = new System.Drawing.Size(132, 21);
-            this.cbUndMed.TabIndex = 16;
+            this.lbTituloMat.AutoSize = true;
+            this.lbTituloMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTituloMat.Location = new System.Drawing.Point(232, 43);
+            this.lbTituloMat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTituloMat.Name = "lbTituloMat";
+            this.lbTituloMat.Size = new System.Drawing.Size(341, 37);
+            this.lbTituloMat.TabIndex = 20;
+            this.lbTituloMat.Text = "Control de Materiales";
             // 
-            // Mantenedor_Material
+            // MantenedorMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 534);
+            this.ClientSize = new System.Drawing.Size(854, 634);
+            this.Controls.Add(this.lbTituloMat);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dgvMantenedorMat);
             this.Controls.Add(this.btnBuscarMat);
             this.Controls.Add(this.gbDatosMaterial);
             this.Controls.Add(this.pictureBoxLogo);
-            this.Name = "Mantenedor_Material";
-            this.Text = "Mantenedor_Material";
+            this.Name = "MantenedorMaterial";
+            this.Text = "Mantenedor Material";
             this.gbDatosMaterial.ResumeLayout(false);
             this.gbDatosMaterial.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -239,5 +253,6 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnBuscarMat;
         private System.Windows.Forms.ComboBox cbUndMed;
+        private System.Windows.Forms.Label lbTituloMat;
     }
 }
