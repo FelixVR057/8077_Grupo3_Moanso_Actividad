@@ -11,72 +11,145 @@ namespace CapaDatos
 {
     public class datCompra
     {
-        // Patrón Singleton
+        #region Singleton
         private static readonly datCompra _instancia = new datCompra();
-        public static datCompra Instancia => _instancia;
+        public static datCompra Instancia
+        {
+            get { return _instancia; }
+        }
+        #endregion
 
-        // 🔹 Método para registrar compra
-        public bool RegistrarCompra(entCompra c)
+        #region Métodos
+
+        // Listar todas las compras
+        public List<entCompra> ListarCompra()
         {
             SqlCommand cmd = null;
-            bool ok = false;
-
+            List<entCompra> lista = new List<entCompra>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spRegistrarOrdenCompra", cn);
+                cmd = new SqlCommand("spListarCompra", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@IdProveedor", c.IdProveedor);
-                cmd.Parameters.AddWithValue("@RUC", c.RUC);
-                cmd.Parameters.AddWithValue("@Producto", c.Producto);
-                cmd.Parameters.AddWithValue("@Cantidad", c.Cantidad);
-                cmd.Parameters.AddWithValue("@PrecioUnitario", c.PrecioUnitario);
-                cmd.Parameters.AddWithValue("@Fecha", c.Fecha);
-                cmd.Parameters.AddWithValue("@Estado", c.Estado);
-
                 cn.Open();
-                int filas = cmd.ExecuteNonQuery();
-                ok = filas > 0;
+
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entCompra c = new entCompra();
+                    c.Id_Comp = Convert.ToInt32(dr["Id_Comp"]);
+                    c.Id_Us = Convert.ToInt32(dr["Id_Us"]);
+                    c.Id_Prov = Convert.ToInt32(dr["Id_Prov"]);
+                    c.Id_Mat = Convert.ToInt32(dr["Id_Mat"]);
+                    c.Cant_DetComp = Convert.ToInt32(dr["Cant_DetComp"]);
+                    c.PU_DetComp = Convert.ToDecimal(dr["PU_DetComp"]);
+                    c.Tot_Comp = Convert.ToDecimal(dr["Tot_Comp"]);
+                    c.Fec_Comp = Convert.ToDateTime(dr["Fec_Comp"]);
+                    c.Nom_Prov = dr["Nom_Prov"].ToString();
+                    c.Nom_Mat = dr["Nom_Mat"].ToString();
+                    lista.Add(c);
+                }
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al registrar compra: " + ex.Message);
+                throw ex;
             }
             finally
             {
-                if (cmd != null) cmd.Connection.Close();
+                cmd.Connection.Close();
             }
-
-            return ok;
+            return lista;
         }
 
-        // 🔹 Método para listar compras
-        public DataTable ListarCompras()
+        // Insertar compra (con detalle)
+        public bool InsertarCompra(entCompra c)
         {
             SqlCommand cmd = null;
-            DataTable dt = new DataTable();
-
+            bool inserta = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListarOrdenCompra", cn);
+                cmd = new SqlCommand("spInsertarCompra", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-
+                cmd.Parameters.AddWithValue("@Id_Us", c.Id_Us);
+                cmd.Parameters.AddWithValue("@Id_Prov", c.Id_Prov);
+                cmd.Parameters.AddWithValue("@Id_Mat", c.Id_Mat);
+                cmd.Parameters.AddWithValue("@Cant_DetComp", c.Cant_DetComp);
+                cmd.Parameters.AddWithValue("@PU_DetComp", c.PU_DetComp);
+                cmd.Parameters.AddWithValue("@Fec_Comp", c.Fec_Comp);
                 cn.Open();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(dt);
+
+                int i = cmd.ExecuteNonQuery();
+                inserta = (i > 0);
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al listar compras: " + ex.Message);
+                throw ex;
             }
             finally
             {
-                if (cmd != null) cmd.Connection.Close();
+                cmd.Connection.Close();
             }
-
-            return dt;
+            return inserta;
         }
+
+        // Modificar compra (ej. cambiar cantidad o precio)
+        public bool EditarCompra(entCompra c)
+        {
+            SqlCommand cmd = null;
+            bool edita = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEditarCompra", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_Comp", c.Id_Comp);
+                cmd.Parameters.AddWithValue("@Cant_DetComp", c.Cant_DetComp);
+                cmd.Parameters.AddWithValue("@PU_DetComp", c.PU_DetComp);
+                cn.Open();
+
+                int i = cmd.ExecuteNonQuery();
+                edita = (i > 0);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return edita;
+        }
+
+        // Eliminar compra
+        public bool EliminarCompra(int idComp)
+        {
+            SqlCommand cmd = null;
+            bool elimina = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEliminarCompra", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_Comp", idComp);
+                cn.Open();
+
+                int i = cmd.ExecuteNonQuery();
+                elimina = (i > 0);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return elimina;
+        }
+
+        #endregion
     }
 }
+

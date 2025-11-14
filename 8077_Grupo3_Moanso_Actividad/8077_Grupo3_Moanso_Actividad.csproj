@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenedor Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedor Material.Designer.cs">
+      <DependentUpon>Mantenedor Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProveedor.Designer.cs">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro de ingreso material.cs">
@@ -62,6 +74,12 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenedor Material.resx">
+      <DependentUpon>Mantenedor Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorProveedor.resx">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoEmpresa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoEmpresa2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

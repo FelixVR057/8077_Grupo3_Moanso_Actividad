@@ -22,7 +22,7 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=LAPTOP-2EC2JU3P; Initial Catalog = DB_Compras;" +//"User ID=sa; Password=123";
+            cn.ConnectionString = "Data Source=DESKTOP-6LPI827\\NICOLAS; Initial Catalog = BD_DyR;" +//"User ID=sa; Password=1234";
              "Integrated Security=true";
 
             return cn;

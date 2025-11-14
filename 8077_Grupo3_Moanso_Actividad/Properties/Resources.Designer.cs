@@ -63,6 +63,16 @@ namespace _8077_Grupo3_Moanso_Actividad.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoEmpresa2 {
+            get {
+                object obj = ResourceManager.GetObject("LogoEmpresa2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoEmpresa3 {
             get {
                 object obj = ResourceManager.GetObject("LogoEmpresa3", resourceCulture);
