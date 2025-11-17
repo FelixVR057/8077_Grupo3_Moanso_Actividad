@@ -33,10 +33,11 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbFecha = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechRegistro = new System.Windows.Forms.DateTimePicker();
             this.txtRuc = new System.Windows.Forms.TextBox();
             this.lbRuc = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.txtProveedor = new System.Windows.Forms.TextBox();
@@ -48,9 +49,9 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.lbTitulo = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.btnprueba = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -85,11 +86,11 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.lbFecha);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtpFechRegistro);
             this.groupBox1.Controls.Add(this.txtRuc);
             this.groupBox1.Controls.Add(this.lbRuc);
             this.groupBox1.Controls.Add(this.txtPrecio);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnAceptar);
             this.groupBox1.Controls.Add(this.txtCantidad);
             this.groupBox1.Controls.Add(this.txtProducto);
             this.groupBox1.Controls.Add(this.txtProveedor);
@@ -117,12 +118,12 @@
             this.lbFecha.TabIndex = 18;
             this.lbFecha.Text = "Fecha:";
             // 
-            // dateTimePicker1
+            // dtpFechRegistro
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(356, 143);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(191, 20);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dtpFechRegistro.Location = new System.Drawing.Point(356, 143);
+            this.dtpFechRegistro.Name = "dtpFechRegistro";
+            this.dtpFechRegistro.Size = new System.Drawing.Size(191, 20);
+            this.dtpFechRegistro.TabIndex = 17;
             // 
             // txtRuc
             // 
@@ -148,6 +149,18 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(152, 20);
             this.txtPrecio.TabIndex = 13;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(599, 41);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(145, 42);
+            this.btnAceptar.TabIndex = 6;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // txtCantidad
             // 
@@ -219,7 +232,7 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(250, 600);
+            this.btnCancelar.Location = new System.Drawing.Point(166, 600);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(145, 42);
             this.btnCancelar.TabIndex = 8;
@@ -231,7 +244,7 @@
             // 
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(38, 600);
+            this.btnRegistrar.Location = new System.Drawing.Point(12, 600);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(145, 42);
             this.btnRegistrar.TabIndex = 6;
@@ -256,18 +269,6 @@
             this.lbTitulo.TabIndex = 8;
             this.lbTitulo.Text = "Registrar Compra De Material";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(599, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 42);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Image = global::_8077_Grupo3_Moanso_Actividad.Properties.Resources.LogoEmpresa3;
@@ -288,6 +289,18 @@
             this.btnprueba.UseVisualStyleBackColor = true;
             this.btnprueba.Click += new System.EventHandler(this.btnprueba_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(317, 600);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(145, 42);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Buscar OC";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,6 +314,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvCompra);
             this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnCancelar);
             this.Name = "Form1";
             this.Text = "Registro de Compras";
@@ -333,10 +347,11 @@
         private System.Windows.Forms.TextBox txtRuc;
         private System.Windows.Forms.Label lbRuc;
         private System.Windows.Forms.Label lbTitulo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechRegistro;
         private System.Windows.Forms.Label lbFecha;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnprueba;
+        private System.Windows.Forms.Button button2;
     }
 }
 

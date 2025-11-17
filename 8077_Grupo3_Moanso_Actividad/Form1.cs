@@ -49,7 +49,7 @@ namespace _8077_Grupo3_Moanso_Actividad
                 c.Id_Mat = 1;  // podrías buscar el material según el producto
                 c.Cant_DetComp = Convert.ToInt32(txtCantidad.Text);
                 c.PU_DetComp = Convert.ToDecimal(txtPrecio.Text);
-                c.Fec_Comp = dateTimePicker1.Value;
+                c.Fec_Comp = dtpFechRegistro.Value;
 
                 bool ok = logCompra.Instancia.InsertarCompra(c);
 
@@ -126,7 +126,7 @@ namespace _8077_Grupo3_Moanso_Actividad
             txtProducto.Clear();
             txtCantidad.Clear();
             txtPrecio.Clear();
-            dateTimePicker1.Value = DateTime.Now;
+            dtpFechRegistro.Value = DateTime.Now;
             txtProveedor.Focus();
         }
 
@@ -205,7 +205,7 @@ namespace _8077_Grupo3_Moanso_Actividad
                 txtProducto.Text = fila.Cells["Nom_Mat"].Value.ToString();
                 txtCantidad.Text = fila.Cells["Cant_DetComp"].Value.ToString();
                 txtPrecio.Text = fila.Cells["PU_DetComp"].Value.ToString();
-                dateTimePicker1.Value = Convert.ToDateTime(fila.Cells["Fec_Comp"].Value);
+                dtpFechRegistro.Value = Convert.ToDateTime(fila.Cells["Fec_Comp"].Value);
             }
         }
 
