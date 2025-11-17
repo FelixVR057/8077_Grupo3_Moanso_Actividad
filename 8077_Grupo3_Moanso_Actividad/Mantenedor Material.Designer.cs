@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gbDatosMaterial = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNomMat = new System.Windows.Forms.TextBox();
             this.cbUndMed = new System.Windows.Forms.ComboBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtDescMaterial = new System.Windows.Forms.TextBox();
@@ -45,8 +47,6 @@
             this.btnBuscarMat = new System.Windows.Forms.Button();
             this.lbTituloMat = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.gbDatosMaterial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -56,7 +56,7 @@
             // 
             this.gbDatosMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gbDatosMaterial.Controls.Add(this.label1);
-            this.gbDatosMaterial.Controls.Add(this.textBox1);
+            this.gbDatosMaterial.Controls.Add(this.txtNomMat);
             this.gbDatosMaterial.Controls.Add(this.cbUndMed);
             this.gbDatosMaterial.Controls.Add(this.txtStock);
             this.gbDatosMaterial.Controls.Add(this.txtDescMaterial);
@@ -74,6 +74,23 @@
             this.gbDatosMaterial.TabIndex = 12;
             this.gbDatosMaterial.TabStop = false;
             this.gbDatosMaterial.Text = "Datos del Material";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Nombre:";
+            // 
+            // txtNomMat
+            // 
+            this.txtNomMat.Location = new System.Drawing.Point(171, 64);
+            this.txtNomMat.Name = "txtNomMat";
+            this.txtNomMat.Size = new System.Drawing.Size(148, 20);
+            this.txtNomMat.TabIndex = 17;
             // 
             // cbUndMed
             // 
@@ -223,23 +240,6 @@
             this.pictureBoxLogo.TabIndex = 11;
             this.pictureBoxLogo.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(171, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Nombre:";
-            // 
             // MantenedorMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,6 +283,6 @@
         private System.Windows.Forms.ComboBox cbUndMed;
         private System.Windows.Forms.Label lbTituloMat;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNomMat;
     }
 }
