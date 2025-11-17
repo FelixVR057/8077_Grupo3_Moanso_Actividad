@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.gbDatosAvance = new System.Windows.Forms.GroupBox();
+            this.dtpFechaAvance = new System.Windows.Forms.DateTimePicker();
+            this.lbEstadoObra = new System.Windows.Forms.Label();
+            this.cbEstadoObra = new System.Windows.Forms.ComboBox();
+            this.cbNivelPrioridad = new System.Windows.Forms.ComboBox();
+            this.lblNivelPrioridad = new System.Windows.Forms.Label();
+            this.btnBuscarObra = new System.Windows.Forms.Button();
             this.cbActividad = new System.Windows.Forms.ComboBox();
             this.btnLimpiarDatos = new System.Windows.Forms.Button();
             this.txtCodObra = new System.Windows.Forms.TextBox();
@@ -37,18 +43,12 @@
             this.lbActividad = new System.Windows.Forms.Label();
             this.lbCodObra = new System.Windows.Forms.Label();
             this.lbTituloMat = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.lblNivelPrioridad = new System.Windows.Forms.Label();
-            this.cbNivelPrioridad = new System.Windows.Forms.ComboBox();
-            this.cbEstadoObra = new System.Windows.Forms.ComboBox();
-            this.lbEstadoObra = new System.Windows.Forms.Label();
-            this.dtpFechaAvance = new System.Windows.Forms.DateTimePicker();
             this.btnVolver = new System.Windows.Forms.Button();
             this.dgvMantenedorMat = new System.Windows.Forms.DataGridView();
-            this.btnBuscarObra = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.gbDatosAvance.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // gbDatosAvance
@@ -73,6 +73,68 @@
             this.gbDatosAvance.TabIndex = 13;
             this.gbDatosAvance.TabStop = false;
             this.gbDatosAvance.Text = "Avance de Obra";
+            // 
+            // dtpFechaAvance
+            // 
+            this.dtpFechaAvance.Location = new System.Drawing.Point(171, 180);
+            this.dtpFechaAvance.Name = "dtpFechaAvance";
+            this.dtpFechaAvance.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaAvance.TabIndex = 21;
+            // 
+            // lbEstadoObra
+            // 
+            this.lbEstadoObra.AutoSize = true;
+            this.lbEstadoObra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEstadoObra.Location = new System.Drawing.Point(18, 141);
+            this.lbEstadoObra.Name = "lbEstadoObra";
+            this.lbEstadoObra.Size = new System.Drawing.Size(99, 13);
+            this.lbEstadoObra.TabIndex = 20;
+            this.lbEstadoObra.Text = "Estado de Obra:";
+            // 
+            // cbEstadoObra
+            // 
+            this.cbEstadoObra.FormattingEnabled = true;
+            this.cbEstadoObra.Items.AddRange(new object[] {
+            "Pendiente",
+            "En curso",
+            "Pausado",
+            "Finalizado"});
+            this.cbEstadoObra.Location = new System.Drawing.Point(171, 141);
+            this.cbEstadoObra.Name = "cbEstadoObra";
+            this.cbEstadoObra.Size = new System.Drawing.Size(121, 21);
+            this.cbEstadoObra.TabIndex = 19;
+            // 
+            // cbNivelPrioridad
+            // 
+            this.cbNivelPrioridad.FormattingEnabled = true;
+            this.cbNivelPrioridad.Items.AddRange(new object[] {
+            "Alto",
+            "Medio",
+            "Bajo"});
+            this.cbNivelPrioridad.Location = new System.Drawing.Point(171, 97);
+            this.cbNivelPrioridad.Name = "cbNivelPrioridad";
+            this.cbNivelPrioridad.Size = new System.Drawing.Size(132, 21);
+            this.cbNivelPrioridad.TabIndex = 18;
+            // 
+            // lblNivelPrioridad
+            // 
+            this.lblNivelPrioridad.AutoSize = true;
+            this.lblNivelPrioridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNivelPrioridad.Location = new System.Drawing.Point(18, 100);
+            this.lblNivelPrioridad.Name = "lblNivelPrioridad";
+            this.lblNivelPrioridad.Size = new System.Drawing.Size(112, 13);
+            this.lblNivelPrioridad.TabIndex = 17;
+            this.lblNivelPrioridad.Text = "Nivel de Prioridad:";
+            // 
+            // btnBuscarObra
+            // 
+            this.btnBuscarObra.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscarObra.Location = new System.Drawing.Point(160, 316);
+            this.btnBuscarObra.Name = "btnBuscarObra";
+            this.btnBuscarObra.Size = new System.Drawing.Size(186, 41);
+            this.btnBuscarObra.TabIndex = 15;
+            this.btnBuscarObra.Text = "Buscar Obra";
+            this.btnBuscarObra.UseVisualStyleBackColor = false;
             // 
             // cbActividad
             // 
@@ -150,59 +212,6 @@
             this.lbTituloMat.TabIndex = 21;
             this.lbTituloMat.Text = "Avance de Obra";
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::_8077_Grupo3_Moanso_Actividad.Properties.Resources.LogoEmpresa3;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 12);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(69, 68);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 12;
-            this.pictureBoxLogo.TabStop = false;
-            // 
-            // lblNivelPrioridad
-            // 
-            this.lblNivelPrioridad.AutoSize = true;
-            this.lblNivelPrioridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNivelPrioridad.Location = new System.Drawing.Point(18, 100);
-            this.lblNivelPrioridad.Name = "lblNivelPrioridad";
-            this.lblNivelPrioridad.Size = new System.Drawing.Size(112, 13);
-            this.lblNivelPrioridad.TabIndex = 17;
-            this.lblNivelPrioridad.Text = "Nivel de Prioridad:";
-            // 
-            // cbNivelPrioridad
-            // 
-            this.cbNivelPrioridad.FormattingEnabled = true;
-            this.cbNivelPrioridad.Location = new System.Drawing.Point(171, 97);
-            this.cbNivelPrioridad.Name = "cbNivelPrioridad";
-            this.cbNivelPrioridad.Size = new System.Drawing.Size(132, 21);
-            this.cbNivelPrioridad.TabIndex = 18;
-            // 
-            // cbEstadoObra
-            // 
-            this.cbEstadoObra.FormattingEnabled = true;
-            this.cbEstadoObra.Location = new System.Drawing.Point(171, 141);
-            this.cbEstadoObra.Name = "cbEstadoObra";
-            this.cbEstadoObra.Size = new System.Drawing.Size(121, 21);
-            this.cbEstadoObra.TabIndex = 19;
-            // 
-            // lbEstadoObra
-            // 
-            this.lbEstadoObra.AutoSize = true;
-            this.lbEstadoObra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstadoObra.Location = new System.Drawing.Point(18, 141);
-            this.lbEstadoObra.Name = "lbEstadoObra";
-            this.lbEstadoObra.Size = new System.Drawing.Size(99, 13);
-            this.lbEstadoObra.TabIndex = 20;
-            this.lbEstadoObra.Text = "Estado de Obra:";
-            // 
-            // dtpFechaAvance
-            // 
-            this.dtpFechaAvance.Location = new System.Drawing.Point(171, 180);
-            this.dtpFechaAvance.Name = "dtpFechaAvance";
-            this.dtpFechaAvance.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaAvance.TabIndex = 21;
-            // 
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -221,15 +230,15 @@
             this.dgvMantenedorMat.Size = new System.Drawing.Size(731, 388);
             this.dgvMantenedorMat.TabIndex = 23;
             // 
-            // btnBuscarObra
+            // pictureBoxLogo
             // 
-            this.btnBuscarObra.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnBuscarObra.Location = new System.Drawing.Point(160, 316);
-            this.btnBuscarObra.Name = "btnBuscarObra";
-            this.btnBuscarObra.Size = new System.Drawing.Size(186, 41);
-            this.btnBuscarObra.TabIndex = 15;
-            this.btnBuscarObra.Text = "Buscar Obra";
-            this.btnBuscarObra.UseVisualStyleBackColor = false;
+            this.pictureBoxLogo.Image = global::_8077_Grupo3_Moanso_Actividad.Properties.Resources.LogoEmpresa3;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(69, 68);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 12;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // AvanceObra
             // 
@@ -245,8 +254,8 @@
             this.Text = "AvanceObra";
             this.gbDatosAvance.ResumeLayout(false);
             this.gbDatosAvance.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -208,5 +208,11 @@ namespace _8077_Grupo3_Moanso_Actividad
                 dateTimePicker1.Value = Convert.ToDateTime(fila.Cells["Fec_Comp"].Value);
             }
         }
+
+        private void btnprueba_Click(object sender, EventArgs e)
+        {
+            Form sd = new AvanceObra();
+            sd.Show();
+        }
     }
 }
