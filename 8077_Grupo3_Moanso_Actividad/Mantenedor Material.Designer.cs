@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gbDatosMaterial = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNomMat = new System.Windows.Forms.TextBox();
             this.cbUndMed = new System.Windows.Forms.ComboBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtDescMaterial = new System.Windows.Forms.TextBox();
@@ -53,6 +55,8 @@
             // gbDatosMaterial
             // 
             this.gbDatosMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gbDatosMaterial.Controls.Add(this.label1);
+            this.gbDatosMaterial.Controls.Add(this.txtNomMat);
             this.gbDatosMaterial.Controls.Add(this.cbUndMed);
             this.gbDatosMaterial.Controls.Add(this.txtStock);
             this.gbDatosMaterial.Controls.Add(this.txtDescMaterial);
@@ -71,10 +75,27 @@
             this.gbDatosMaterial.TabStop = false;
             this.gbDatosMaterial.Text = "Datos del Material";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Nombre:";
+            // 
+            // txtNomMat
+            // 
+            this.txtNomMat.Location = new System.Drawing.Point(171, 64);
+            this.txtNomMat.Name = "txtNomMat";
+            this.txtNomMat.Size = new System.Drawing.Size(148, 20);
+            this.txtNomMat.TabIndex = 17;
+            // 
             // cbUndMed
             // 
             this.cbUndMed.FormattingEnabled = true;
-            this.cbUndMed.Location = new System.Drawing.Point(171, 114);
+            this.cbUndMed.Location = new System.Drawing.Point(171, 129);
             this.cbUndMed.Name = "cbUndMed";
             this.cbUndMed.Size = new System.Drawing.Size(132, 21);
             this.cbUndMed.TabIndex = 16;
@@ -88,7 +109,7 @@
             // 
             // txtDescMaterial
             // 
-            this.txtDescMaterial.Location = new System.Drawing.Point(171, 68);
+            this.txtDescMaterial.Location = new System.Drawing.Point(171, 97);
             this.txtDescMaterial.Name = "txtDescMaterial";
             this.txtDescMaterial.Size = new System.Drawing.Size(402, 20);
             this.txtDescMaterial.TabIndex = 1;
@@ -144,7 +165,7 @@
             // 
             this.lbUni.AutoSize = true;
             this.lbUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUni.Location = new System.Drawing.Point(18, 114);
+            this.lbUni.Location = new System.Drawing.Point(18, 132);
             this.lbUni.Name = "lbUni";
             this.lbUni.Size = new System.Drawing.Size(113, 13);
             this.lbUni.TabIndex = 7;
@@ -164,7 +185,7 @@
             // 
             this.lbDescMat.AutoSize = true;
             this.lbDescMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDescMat.Location = new System.Drawing.Point(18, 68);
+            this.lbDescMat.Location = new System.Drawing.Point(18, 100);
             this.lbDescMat.Name = "lbDescMat";
             this.lbDescMat.Size = new System.Drawing.Size(147, 13);
             this.lbDescMat.TabIndex = 5;
@@ -261,5 +282,7 @@
         private System.Windows.Forms.Button btnBuscarMat;
         private System.Windows.Forms.ComboBox cbUndMed;
         private System.Windows.Forms.Label lbTituloMat;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNomMat;
     }
 }
