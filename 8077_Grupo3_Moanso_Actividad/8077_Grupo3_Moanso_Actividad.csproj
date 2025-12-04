@@ -82,6 +82,12 @@
     <Compile Include="Mantenedor Material.Designer.cs">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenedor Obra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedor Obra.Designer.cs">
+      <DependentUpon>Mantenedor Obra.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor Material.resx">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenedor Obra.resx">
+      <DependentUpon>Mantenedor Obra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProveedor.resx">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
