@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.gbDatosMaterial = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNomMat = new System.Windows.Forms.TextBox();
+            this.lbCategoriaMat = new System.Windows.Forms.Label();
             this.cbUndMed = new System.Windows.Forms.ComboBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtDescMaterial = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.btnBuscarMat = new System.Windows.Forms.Button();
             this.lbTituloMat = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.cbCategoriaMat = new System.Windows.Forms.ComboBox();
             this.gbDatosMaterial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -55,8 +55,8 @@
             // gbDatosMaterial
             // 
             this.gbDatosMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gbDatosMaterial.Controls.Add(this.label1);
-            this.gbDatosMaterial.Controls.Add(this.txtNomMat);
+            this.gbDatosMaterial.Controls.Add(this.cbCategoriaMat);
+            this.gbDatosMaterial.Controls.Add(this.lbCategoriaMat);
             this.gbDatosMaterial.Controls.Add(this.cbUndMed);
             this.gbDatosMaterial.Controls.Add(this.txtStock);
             this.gbDatosMaterial.Controls.Add(this.txtDescMaterial);
@@ -70,46 +70,39 @@
             this.gbDatosMaterial.Controls.Add(this.lbDescMat);
             this.gbDatosMaterial.Location = new System.Drawing.Point(47, 104);
             this.gbDatosMaterial.Name = "gbDatosMaterial";
-            this.gbDatosMaterial.Size = new System.Drawing.Size(757, 204);
+            this.gbDatosMaterial.Size = new System.Drawing.Size(757, 191);
             this.gbDatosMaterial.TabIndex = 12;
             this.gbDatosMaterial.TabStop = false;
             this.gbDatosMaterial.Text = "Datos del Material";
             // 
-            // label1
+            // lbCategoriaMat
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Nombre:";
-            // 
-            // txtNomMat
-            // 
-            this.txtNomMat.Location = new System.Drawing.Point(171, 64);
-            this.txtNomMat.Name = "txtNomMat";
-            this.txtNomMat.Size = new System.Drawing.Size(148, 20);
-            this.txtNomMat.TabIndex = 17;
+            this.lbCategoriaMat.AutoSize = true;
+            this.lbCategoriaMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCategoriaMat.Location = new System.Drawing.Point(18, 117);
+            this.lbCategoriaMat.Name = "lbCategoriaMat";
+            this.lbCategoriaMat.Size = new System.Drawing.Size(114, 13);
+            this.lbCategoriaMat.TabIndex = 18;
+            this.lbCategoriaMat.Text = "Categoria Material:";
             // 
             // cbUndMed
             // 
             this.cbUndMed.FormattingEnabled = true;
-            this.cbUndMed.Location = new System.Drawing.Point(171, 129);
+            this.cbUndMed.Location = new System.Drawing.Point(171, 86);
             this.cbUndMed.Name = "cbUndMed";
             this.cbUndMed.Size = new System.Drawing.Size(132, 21);
             this.cbUndMed.TabIndex = 16;
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(171, 164);
+            this.txtStock.Location = new System.Drawing.Point(171, 143);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(132, 20);
             this.txtStock.TabIndex = 9;
             // 
             // txtDescMaterial
             // 
-            this.txtDescMaterial.Location = new System.Drawing.Point(171, 97);
+            this.txtDescMaterial.Location = new System.Drawing.Point(171, 55);
             this.txtDescMaterial.Name = "txtDescMaterial";
             this.txtDescMaterial.Size = new System.Drawing.Size(402, 20);
             this.txtDescMaterial.TabIndex = 1;
@@ -117,7 +110,7 @@
             // btnInhabilitarMat
             // 
             this.btnInhabilitarMat.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInhabilitarMat.Location = new System.Drawing.Point(620, 143);
+            this.btnInhabilitarMat.Location = new System.Drawing.Point(620, 132);
             this.btnInhabilitarMat.Name = "btnInhabilitarMat";
             this.btnInhabilitarMat.Size = new System.Drawing.Size(107, 41);
             this.btnInhabilitarMat.TabIndex = 15;
@@ -134,7 +127,7 @@
             // btnModificarProv
             // 
             this.btnModificarProv.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnModificarProv.Location = new System.Drawing.Point(620, 86);
+            this.btnModificarProv.Location = new System.Drawing.Point(620, 75);
             this.btnModificarProv.Name = "btnModificarProv";
             this.btnModificarProv.Size = new System.Drawing.Size(107, 41);
             this.btnModificarProv.TabIndex = 13;
@@ -145,7 +138,7 @@
             // 
             this.lbStock.AutoSize = true;
             this.lbStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStock.Location = new System.Drawing.Point(18, 164);
+            this.lbStock.Location = new System.Drawing.Point(18, 146);
             this.lbStock.Name = "lbStock";
             this.lbStock.Size = new System.Drawing.Size(44, 13);
             this.lbStock.TabIndex = 8;
@@ -154,7 +147,7 @@
             // btnNuevoProv
             // 
             this.btnNuevoProv.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnNuevoProv.Location = new System.Drawing.Point(620, 29);
+            this.btnNuevoProv.Location = new System.Drawing.Point(620, 19);
             this.btnNuevoProv.Name = "btnNuevoProv";
             this.btnNuevoProv.Size = new System.Drawing.Size(107, 41);
             this.btnNuevoProv.TabIndex = 12;
@@ -165,7 +158,7 @@
             // 
             this.lbUni.AutoSize = true;
             this.lbUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUni.Location = new System.Drawing.Point(18, 132);
+            this.lbUni.Location = new System.Drawing.Point(18, 89);
             this.lbUni.Name = "lbUni";
             this.lbUni.Size = new System.Drawing.Size(113, 13);
             this.lbUni.TabIndex = 7;
@@ -185,7 +178,7 @@
             // 
             this.lbDescMat.AutoSize = true;
             this.lbDescMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDescMat.Location = new System.Drawing.Point(18, 100);
+            this.lbDescMat.Location = new System.Drawing.Point(18, 58);
             this.lbDescMat.Name = "lbDescMat";
             this.lbDescMat.Size = new System.Drawing.Size(147, 13);
             this.lbDescMat.TabIndex = 5;
@@ -240,6 +233,14 @@
             this.pictureBoxLogo.TabIndex = 11;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // cbCategoriaMat
+            // 
+            this.cbCategoriaMat.FormattingEnabled = true;
+            this.cbCategoriaMat.Location = new System.Drawing.Point(171, 114);
+            this.cbCategoriaMat.Name = "cbCategoriaMat";
+            this.cbCategoriaMat.Size = new System.Drawing.Size(241, 21);
+            this.cbCategoriaMat.TabIndex = 19;
+            // 
             // MantenedorMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,7 +283,7 @@
         private System.Windows.Forms.Button btnBuscarMat;
         private System.Windows.Forms.ComboBox cbUndMed;
         private System.Windows.Forms.Label lbTituloMat;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNomMat;
+        private System.Windows.Forms.Label lbCategoriaMat;
+        private System.Windows.Forms.ComboBox cbCategoriaMat;
     }
 }

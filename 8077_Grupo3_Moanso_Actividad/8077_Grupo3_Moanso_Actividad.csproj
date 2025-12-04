@@ -82,11 +82,29 @@
     <Compile Include="Mantenedor Material.Designer.cs">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenedor Obra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedor Obra.Designer.cs">
+      <DependentUpon>Mantenedor Obra.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MantenedorProveedor.Designer.cs">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenServicio.Designer.cs">
+      <DependentUpon>OrdenServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUserCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUserCompra.Designer.cs">
+      <DependentUpon>PanelUserCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +113,12 @@
     </Compile>
     <Compile Include="Requerimiento Material.Designer.cs">
       <DependentUpon>Requerimiento Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Requerimiento_Obra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Requerimiento_Obra.Designer.cs">
+      <DependentUpon>Requerimiento_Obra.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AvanceObra.resx">
       <DependentUpon>AvanceObra.cs</DependentUpon>
@@ -114,8 +138,17 @@
     <EmbeddedResource Include="Mantenedor Material.resx">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenedor Obra.resx">
+      <DependentUpon>Mantenedor Obra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProveedor.resx">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenServicio.resx">
+      <DependentUpon>OrdenServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUserCompra.resx">
+      <DependentUpon>PanelUserCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="Requerimiento Material.resx">
       <DependentUpon>Requerimiento Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Requerimiento_Obra.resx">
+      <DependentUpon>Requerimiento_Obra.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -158,6 +194,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoEmpresa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarpetaOC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
