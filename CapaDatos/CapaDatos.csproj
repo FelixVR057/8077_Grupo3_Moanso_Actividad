@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CD_Material.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="DaoMaterial.cs" />
     <Compile Include="datCompra.cs" />
     <Compile Include="datCronograma.cs" />
     <Compile Include="datProveedor.cs" />

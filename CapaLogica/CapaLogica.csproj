@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CL_Material.cs" />
     <Compile Include="logCliente.cs" />
     <Compile Include="logCompra.cs" />
     <Compile Include="logCronograma.cs" />
+    <Compile Include="LogicaMaterial.cs" />
     <Compile Include="logProveedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
