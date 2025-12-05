@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AvanceObra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AvanceObra.Designer.cs">
+      <DependentUpon>AvanceObra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Registro.Designer.cs">
+      <DependentUpon>Login Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Ingresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Ingresar.Designer.cs">
+      <DependentUpon>Login_Ingresar.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenedor CronogramaObra.cs">
       <SubType>Form</SubType>
@@ -64,16 +76,58 @@
     <Compile Include="Mantenedor Material.Designer.cs">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenedor Obra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedor Obra.Designer.cs">
+      <DependentUpon>Mantenedor Obra.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MantenedorProveedor.Designer.cs">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorServicios.Designer.cs">
+      <DependentUpon>MantenedorServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotaIngresoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotaIngresoMaterial.Designer.cs">
+      <DependentUpon>NotaIngresoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotaSalidaMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotaSalidaMaterial.Designer.cs">
+      <DependentUpon>NotaSalidaMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Requerimiento Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Requerimiento Material.Designer.cs">
+      <DependentUpon>Requerimiento Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Requerimiento_Obra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Requerimiento_Obra.Designer.cs">
+      <DependentUpon>Requerimiento_Obra.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AvanceObra.resx">
+      <DependentUpon>AvanceObra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Registro.resx">
+      <DependentUpon>Login Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Ingresar.resx">
+      <DependentUpon>Login_Ingresar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor CronogramaObra.resx">
       <DependentUpon>Mantenedor CronogramaObra.cs</DependentUpon>
@@ -81,8 +135,20 @@
     <EmbeddedResource Include="Mantenedor Material.resx">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenedor Obra.resx">
+      <DependentUpon>Mantenedor Obra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProveedor.resx">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorServicios.resx">
+      <DependentUpon>MantenedorServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaIngresoMaterial.resx">
+      <DependentUpon>NotaIngresoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaSalidaMaterial.resx">
+      <DependentUpon>NotaSalidaMaterial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +160,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Requerimiento Material.resx">
+      <DependentUpon>Requerimiento Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Requerimiento_Obra.resx">
+      <DependentUpon>Requerimiento_Obra.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,6 +194,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoEmpresa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarpetaOC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
