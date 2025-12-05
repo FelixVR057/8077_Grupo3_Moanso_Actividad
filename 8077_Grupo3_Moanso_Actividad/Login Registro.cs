@@ -10,13 +10,19 @@ using System.Windows.Forms;
 
 namespace _8077_Grupo3_Moanso_Actividad
 {
-    public partial class Requerimiento_Material : Form
+    public partial class Login_Registro : Form
     {
-        public Requerimiento_Material()
+        public Login_Registro()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+        }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login_Ingresar frm = new Login_Ingresar();
+            frm.Show();
+            this.Close();
         }
     }
 }

@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace _8077_Grupo3_Moanso_Actividad
 {
-    public partial class Requerimiento_Material : Form
+    public partial class Login_Usuarios : Form
     {
-        public Requerimiento_Material()
+        public Login_Usuarios()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
-
         }
+
+    
     }
 }

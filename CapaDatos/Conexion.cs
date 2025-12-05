@@ -9,24 +9,19 @@ namespace CapaDatos
 {
     public class Conexion
     {
-        //patron de Diseño Singleton
         private static readonly Conexion _instancia = new Conexion();
-        public static Conexion Instancia
-        {
-            get { return Conexion._instancia; }
-        }
+        public static Conexion Instancia => _instancia;
 
-
-
+        private Conexion() { }
 
         public SqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=local; Initial Catalog = DB_DyR_Grupo03;" +//"User ID=sa; Password=1234";
-             "Integrated Security=true";
+            return new SqlConnection(
 
-            return cn;
+                "Data Source=.; Initial Catalog=BD_DyR_Grupo_03_Prueba; Integrated Security=True;"
+
+            );
         }
-
     }
 }
+
