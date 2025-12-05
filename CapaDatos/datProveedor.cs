@@ -1,143 +1,129 @@
-﻿using CapaEntidad;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CapaEntidad;
 
 namespace CapaDatos
 {
     public class datProveedor
     {
-        #region Singleton
         private static readonly datProveedor _instancia = new datProveedor();
-        public static datProveedor Instancia
-        {
-            get { return _instancia; }
-        }
-        #endregion
+        public static datProveedor Instancia => _instancia;
 
-        #region Métodos
-
-        // Listar todos los proveedores
-        public List<entProveedor> ListarProveedor()
+        // 🔹 LISTAR PROVEEDORES
+        public DataTable ListarProveedor()
         {
             SqlCommand cmd = null;
-            List<entProveedor> lista = new List<entProveedor>();
+            DataTable dt = new DataTable();
+
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListarProveedor", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
+                cmd = new SqlCommand("SELECT IdProveedor, NombreProveedor, RUC, Estado FROM Proveedor", cn);
                 cn.Open();
-
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    entProveedor p = new entProveedor();
-                    p.Id_Prov = Convert.ToInt32(dr["Id_Prov"]);
-                    p.Nom_Prov = dr["Nom_Prov"].ToString();
-                    p.RUC_Prov = dr["RUC_Prov"].ToString();
-                    lista.Add(p);
-                }
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al listar proveedores: " + ex.Message);
             }
             finally
             {
-                cmd.Connection.Close();
+                if (cmd != null) cmd.Connection.Close();
             }
-            return lista;
+
+            return dt;
         }
 
-        // Insertar proveedor
+        // 🔹 INSERTAR PROVEEDOR
         public bool InsertarProveedor(entProveedor p)
         {
             SqlCommand cmd = null;
-            bool inserta = false;
+            bool ok = false;
+
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertarProveedor", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Nom_Prov", p.Nom_Prov);
-                cmd.Parameters.AddWithValue("@RUC_Prov", p.RUC_Prov);
-                cn.Open();
+                cmd = new SqlCommand("INSERT INTO Proveedor (NombreProveedor, RUC, Estado) VALUES (@NombreProveedor, @RUC, @Estado)", cn);
+                cmd.Parameters.AddWithValue("@NombreProveedor", p.NombreProveedor);
+                cmd.Parameters.AddWithValue("@RUC", p.RUC);
+                cmd.Parameters.AddWithValue("@Estado", p.Estado);
 
-                int i = cmd.ExecuteNonQuery();
-                inserta = (i > 0);
+                cn.Open();
+                int filas = cmd.ExecuteNonQuery();
+                ok = filas > 0;
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al insertar proveedor: " + ex.Message);
             }
             finally
             {
-                cmd.Connection.Close();
+                if (cmd != null) cmd.Connection.Close();
             }
-            return inserta;
+
+            return ok;
         }
 
-        // Editar proveedor
+        // 🔹 EDITAR PROVEEDOR
         public bool EditarProveedor(entProveedor p)
         {
             SqlCommand cmd = null;
-            bool edita = false;
+            bool ok = false;
+
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditarProveedor", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Id_Prov", p.Id_Prov);
-                cmd.Parameters.AddWithValue("@Nom_Prov", p.Nom_Prov);
-                cmd.Parameters.AddWithValue("@RUC_Prov", p.RUC_Prov);
-                cn.Open();
+                cmd = new SqlCommand("UPDATE Proveedor SET NombreProveedor=@NombreProveedor, RUC=@RUC, Estado=@Estado WHERE IdProveedor=@IdProveedor", cn);
+                cmd.Parameters.AddWithValue("@IdProveedor", p.IdProveedor);
+                cmd.Parameters.AddWithValue("@NombreProveedor", p.NombreProveedor);
+                cmd.Parameters.AddWithValue("@RUC", p.RUC);
+                cmd.Parameters.AddWithValue("@Estado", p.Estado);
 
-                int i = cmd.ExecuteNonQuery();
-                edita = (i > 0);
+                cn.Open();
+                int filas = cmd.ExecuteNonQuery();
+                ok = filas > 0;
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al editar proveedor: " + ex.Message);
             }
             finally
             {
-                cmd.Connection.Close();
+                if (cmd != null) cmd.Connection.Close();
             }
-            return edita;
+
+            return ok;
         }
 
-        // Eliminar proveedor
-        public bool EliminarProveedor(int idProv)
+        // 🔹 ELIMINAR (DESHABILITAR) PROVEEDOR
+        public bool EliminarProveedor(int idProveedor)
         {
             SqlCommand cmd = null;
-            bool elimina = false;
+            bool ok = false;
+
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEliminarProveedor", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Id_Prov", idProv);
-                cn.Open();
+                // ⚠️ En lugar de borrar, cambia el estado a 'Inactivo'
+                cmd = new SqlCommand("UPDATE Proveedor SET Estado='Inactivo' WHERE IdProveedor=@IdProveedor", cn);
+                cmd.Parameters.AddWithValue("@IdProveedor", idProveedor);
 
-                int i = cmd.ExecuteNonQuery();
-                elimina = (i > 0);
+                cn.Open();
+                int filas = cmd.ExecuteNonQuery();
+                ok = filas > 0;
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al eliminar proveedor: " + ex.Message);
             }
             finally
             {
-                cmd.Connection.Close();
+                if (cmd != null) cmd.Connection.Close();
             }
-            return elimina;
-        }
 
-        #endregion
+            return ok;
+        }
     }
 }

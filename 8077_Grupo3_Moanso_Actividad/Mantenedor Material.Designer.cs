@@ -95,14 +95,16 @@
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(171, 143);
+            this.txtStock.Location = new System.Drawing.Point(228, 221);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(132, 20);
             this.txtStock.TabIndex = 9;
             // 
             // txtDescMaterial
             // 
-            this.txtDescMaterial.Location = new System.Drawing.Point(171, 55);
+            this.txtDescMaterial.Location = new System.Drawing.Point(228, 84);
+            this.txtDescMaterial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescMaterial.Name = "txtDescMaterial";
             this.txtDescMaterial.Size = new System.Drawing.Size(402, 20);
             this.txtDescMaterial.TabIndex = 1;
@@ -112,16 +114,17 @@
             this.btnInhabilitarMat.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnInhabilitarMat.Location = new System.Drawing.Point(620, 132);
             this.btnInhabilitarMat.Name = "btnInhabilitarMat";
-            this.btnInhabilitarMat.Size = new System.Drawing.Size(107, 41);
+            this.btnInhabilitarMat.Size = new System.Drawing.Size(143, 50);
             this.btnInhabilitarMat.TabIndex = 15;
             this.btnInhabilitarMat.Text = "Inhabilitar Material";
             this.btnInhabilitarMat.UseVisualStyleBackColor = false;
             // 
             // txtCodMat
             // 
-            this.txtCodMat.Location = new System.Drawing.Point(171, 25);
+            this.txtCodMat.Location = new System.Drawing.Point(228, 31);
+            this.txtCodMat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodMat.Name = "txtCodMat";
-            this.txtCodMat.Size = new System.Drawing.Size(148, 20);
+            this.txtCodMat.Size = new System.Drawing.Size(196, 22);
             this.txtCodMat.TabIndex = 0;
             // 
             // btnModificarProv
@@ -129,7 +132,7 @@
             this.btnModificarProv.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnModificarProv.Location = new System.Drawing.Point(620, 75);
             this.btnModificarProv.Name = "btnModificarProv";
-            this.btnModificarProv.Size = new System.Drawing.Size(107, 41);
+            this.btnModificarProv.Size = new System.Drawing.Size(143, 50);
             this.btnModificarProv.TabIndex = 13;
             this.btnModificarProv.Text = "Modificar";
             this.btnModificarProv.UseVisualStyleBackColor = false;
@@ -138,9 +141,10 @@
             // 
             this.lbStock.AutoSize = true;
             this.lbStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStock.Location = new System.Drawing.Point(18, 146);
+            this.lbStock.Location = new System.Drawing.Point(40, 223);
+            this.lbStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStock.Name = "lbStock";
-            this.lbStock.Size = new System.Drawing.Size(44, 13);
+            this.lbStock.Size = new System.Drawing.Size(53, 17);
             this.lbStock.TabIndex = 8;
             this.lbStock.Text = "Stock:";
             // 
@@ -149,7 +153,7 @@
             this.btnNuevoProv.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnNuevoProv.Location = new System.Drawing.Point(620, 19);
             this.btnNuevoProv.Name = "btnNuevoProv";
-            this.btnNuevoProv.Size = new System.Drawing.Size(107, 41);
+            this.btnNuevoProv.Size = new System.Drawing.Size(143, 50);
             this.btnNuevoProv.TabIndex = 12;
             this.btnNuevoProv.Text = "Nuevo";
             this.btnNuevoProv.UseVisualStyleBackColor = false;
@@ -158,9 +162,10 @@
             // 
             this.lbUni.AutoSize = true;
             this.lbUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUni.Location = new System.Drawing.Point(18, 89);
+            this.lbUni.Location = new System.Drawing.Point(24, 140);
+            this.lbUni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUni.Name = "lbUni";
-            this.lbUni.Size = new System.Drawing.Size(113, 13);
+            this.lbUni.Size = new System.Drawing.Size(144, 17);
             this.lbUni.TabIndex = 7;
             this.lbUni.Text = "Unidad de medida:";
             // 
@@ -168,9 +173,10 @@
             // 
             this.lbCodMat.AutoSize = true;
             this.lbCodMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCodMat.Location = new System.Drawing.Point(18, 29);
+            this.lbCodMat.Location = new System.Drawing.Point(24, 36);
+            this.lbCodMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCodMat.Name = "lbCodMat";
-            this.lbCodMat.Size = new System.Drawing.Size(99, 13);
+            this.lbCodMat.Size = new System.Drawing.Size(126, 17);
             this.lbCodMat.TabIndex = 4;
             this.lbCodMat.Text = "Código Material:";
             // 
@@ -178,9 +184,10 @@
             // 
             this.lbDescMat.AutoSize = true;
             this.lbDescMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDescMat.Location = new System.Drawing.Point(18, 58);
+            this.lbDescMat.Location = new System.Drawing.Point(24, 84);
+            this.lbDescMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDescMat.Name = "lbDescMat";
-            this.lbDescMat.Size = new System.Drawing.Size(147, 13);
+            this.lbDescMat.Size = new System.Drawing.Size(188, 17);
             this.lbDescMat.TabIndex = 5;
             this.lbDescMat.Text = "Descripción del material:";
             // 
@@ -189,7 +196,8 @@
             this.dgvMantenedorMat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMantenedorMat.Location = new System.Drawing.Point(47, 331);
             this.dgvMantenedorMat.Name = "dgvMantenedorMat";
-            this.dgvMantenedorMat.Size = new System.Drawing.Size(638, 277);
+            this.dgvMantenedorMat.RowHeadersWidth = 51;
+            this.dgvMantenedorMat.Size = new System.Drawing.Size(851, 341);
             this.dgvMantenedorMat.TabIndex = 17;
             // 
             // btnVolver
@@ -197,7 +205,7 @@
             this.btnVolver.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnVolver.Location = new System.Drawing.Point(735, 581);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(107, 41);
+            this.btnVolver.Size = new System.Drawing.Size(143, 50);
             this.btnVolver.TabIndex = 19;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -207,7 +215,7 @@
             this.btnBuscarMat.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnBuscarMat.Location = new System.Drawing.Point(710, 417);
             this.btnBuscarMat.Name = "btnBuscarMat";
-            this.btnBuscarMat.Size = new System.Drawing.Size(107, 71);
+            this.btnBuscarMat.Size = new System.Drawing.Size(143, 87);
             this.btnBuscarMat.TabIndex = 18;
             this.btnBuscarMat.Text = "Buscar Material";
             this.btnBuscarMat.UseVisualStyleBackColor = false;
@@ -243,7 +251,7 @@
             // 
             // MantenedorMaterial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(854, 634);

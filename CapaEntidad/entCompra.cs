@@ -8,17 +8,16 @@ namespace CapaEntidad
 {
     public class entCompra
     {
-        public int Id_Comp { get; set; }
-        public int Id_Us { get; set; }       // Usuario que registra la compra
-        public int Id_Prov { get; set; }  
-        public int Id_Mat { get; set; }  
-        public int Cant_DetComp { get; set; }
-        public decimal PU_DetComp { get; set; }
-        public decimal Tot_Comp { get; set; }
-        public DateTime Fec_Comp { get; set; }
+        public int IdOrdenCompra { get; set; }
+        public int IdProveedor { get; set; }
+        public string RUC { get; set; }
+        public string Producto { get; set; }
+        public int Cantidad { get; set; }
+        public decimal PrecioUnitario { get; set; }
+        public DateTime Fecha { get; set; }
+        public string Estado { get; set; }
 
-        // Propiedades adicionales
-        public string Nom_Prov { get; set; } 
-        public string Nom_Mat { get; set; } 
+        // Propiedades adicionales (para mostrar datos combinados)
+        public string NombreProveedor { get; set; }
     }
 }
