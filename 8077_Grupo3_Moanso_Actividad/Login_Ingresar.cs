@@ -19,7 +19,8 @@ namespace _8077_Grupo3_Moanso_Actividad
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Login_Registro frm = new Login_Registro();
+            frm.Show();
         }
     }
 }
