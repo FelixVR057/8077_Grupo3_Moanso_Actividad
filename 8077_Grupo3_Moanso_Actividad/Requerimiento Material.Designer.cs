@@ -32,17 +32,17 @@
             this.btnVolver = new System.Windows.Forms.Button();
             this.dgvMantenedorMat = new System.Windows.Forms.DataGridView();
             this.gbDatosMaterial = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.cbUndMed = new System.Windows.Forms.ComboBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtCodMat = new System.Windows.Forms.TextBox();
             this.lbStock = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnNuevoProv = new System.Windows.Forms.Button();
             this.lbUni = new System.Windows.Forms.Label();
             this.lbCodMat = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).BeginInit();
             this.gbDatosMaterial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -97,14 +97,6 @@
             this.gbDatosMaterial.TabStop = false;
             this.gbDatosMaterial.Text = "Datos del Material";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(171, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(132, 21);
-            this.comboBox1.TabIndex = 16;
-            // 
             // cbUndMed
             // 
             this.cbUndMed.FormattingEnabled = true;
@@ -137,30 +129,10 @@
             this.lbStock.TabIndex = 8;
             this.lbStock.Text = "Cantidad:";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(620, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 41);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Unidad de medida:";
-            // 
             // btnNuevoProv
             // 
             this.btnNuevoProv.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnNuevoProv.Location = new System.Drawing.Point(620, 47);
+            this.btnNuevoProv.Location = new System.Drawing.Point(620, 29);
             this.btnNuevoProv.Name = "btnNuevoProv";
             this.btnNuevoProv.Size = new System.Drawing.Size(107, 41);
             this.btnNuevoProv.TabIndex = 12;
@@ -196,6 +168,34 @@
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogo.TabIndex = 21;
             this.pictureBoxLogo.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(620, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 41);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Unidad de medida:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(171, 75);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(132, 21);
+            this.comboBox1.TabIndex = 16;
             // 
             // Requerimiento_Material
             // 
