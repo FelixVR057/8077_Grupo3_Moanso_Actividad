@@ -10,13 +10,12 @@ using System.Windows.Forms;
 
 namespace _8077_Grupo3_Moanso_Actividad
 {
-    public partial class OrdenServicio : Form
+    public partial class MantenedorServicios : Form
     {
-        public OrdenServicio()
+        public MantenedorServicios()
         {
             InitializeComponent();
         }
-
 
     }
 }
