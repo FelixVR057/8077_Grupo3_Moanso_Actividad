@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,39 +11,38 @@ namespace CapaLogica
 {
     public class logProveedor
     {
-        #region Singleton
-        private static readonly logProveedor _instancia = new logProveedor();
-        public static logProveedor Instancia
+        private datProveedor objDatos = new datProveedor();
+        public void RegistrarProveedor(entProveedor obj)
         {
-            get { return _instancia; }
-        }
-        #endregion
+    
+            if (string.IsNullOrEmpty(obj.Nombre) || string.IsNullOrEmpty(obj.RUC))
+            {
+                throw new Exception("El Nombre y el RUC son obligatorios.");
+            }
 
-        #region Métodos
-        public List<entProveedor> ListarProveedor()
-        {
-            return datProveedor.Instancia.ListarProveedor();
+            objDatos.Registrar(obj);
         }
 
-        public bool InsertarProveedor(entProveedor p)
+       
+        public void EditarProveedor(entProveedor obj)
         {
-            if (string.IsNullOrEmpty(p.Nom_Prov) || string.IsNullOrEmpty(p.RUC_Prov))
-                throw new Exception("Debe completar todos los campos del proveedor.");
+            if (obj.IdProveedor <= 0)
+            {
+                throw new Exception("No se ha seleccionado un proveedor válido.");
+            }
 
-            return datProveedor.Instancia.InsertarProveedor(p);
+            objDatos.Editar(obj);
         }
 
-        public bool EditarProveedor(entProveedor p)
+      
+        public void EliminarProveedor(int idProveedor)
         {
-            if (p.Id_Prov <= 0)
-                throw new Exception("Debe seleccionar un proveedor válido.");
-            return datProveedor.Instancia.EditarProveedor(p);
+            objDatos.Eliminar(idProveedor);
         }
 
-        public bool EliminarProveedor(int idProv)
+        public DataTable ListarProveedor()
         {
-            return datProveedor.Instancia.EliminarProveedor(idProv);
+            return objDatos.Listar();
         }
-        #endregion
     }
 }
