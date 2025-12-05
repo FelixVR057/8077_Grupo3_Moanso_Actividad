@@ -17,9 +17,9 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             return new SqlConnection(
-                "Data Source=VISMOKE\\Vismoke;" +
-                "Initial Catalog=BD_DyR_Grupo_03_Prueba;" +
-                "Integrated Security=True;"
+
+                "Data Source=.; Initial Catalog=BD_DyR_Grupo_03_Prueba; Integrated Security=True;"
+
             );
         }
     }

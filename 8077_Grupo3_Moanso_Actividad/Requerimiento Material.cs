@@ -15,6 +15,8 @@ namespace _8077_Grupo3_Moanso_Actividad
         public Requerimiento_Material()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+
         }
     }
 }
