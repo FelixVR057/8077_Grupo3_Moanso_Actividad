@@ -52,6 +52,18 @@
     <Compile Include="AvanceObra.Designer.cs">
       <DependentUpon>AvanceObra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login_Ingresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Ingresar.Designer.cs">
+      <DependentUpon>Login_Ingresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Ingresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Ingresar.Designer.cs">
+      <DependentUpon>Login_Ingresar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenedor CronogramaObra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,17 +117,17 @@
     <Compile Include="Requerimiento Material.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Requerimiento Material.Designer.cs">
-      <DependentUpon>Requerimiento Material.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Requerimiento_Obra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Requerimiento_Obra.Designer.cs">
-      <DependentUpon>Requerimiento_Obra.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AvanceObra.resx">
       <DependentUpon>AvanceObra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Registro.resx">
+      <DependentUpon>Login Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Ingresar.resx">
+      <DependentUpon>Login_Ingresar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor CronogramaObra.resx">
       <DependentUpon>Mantenedor CronogramaObra.cs</DependentUpon>
