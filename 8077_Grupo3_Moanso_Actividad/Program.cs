@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace _8077_Grupo3_Moanso_Actividad
 {
-    internal static class Program
+    static class Program
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
@@ -16,7 +16,7 @@ namespace _8077_Grupo3_Moanso_Actividad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login_Ingresar());
+            Application.Run(new MantenedorServicios());
         }
     }
 }

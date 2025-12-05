@@ -140,7 +140,7 @@
             // 
             // txtTiempoEjecucion
             // 
-            this.txtTiempoEjecucion.Location = new System.Drawing.Point(697, 28);
+            this.txtTiempoEjecucion.Location = new System.Drawing.Point(712, 32);
             this.txtTiempoEjecucion.Multiline = true;
             this.txtTiempoEjecucion.Name = "txtTiempoEjecucion";
             this.txtTiempoEjecucion.Size = new System.Drawing.Size(270, 23);
@@ -155,14 +155,14 @@
             // 
             // txtNombreServicio
             // 
-            this.txtNombreServicio.Location = new System.Drawing.Point(175, 66);
+            this.txtNombreServicio.Location = new System.Drawing.Point(193, 66);
             this.txtNombreServicio.Name = "txtNombreServicio";
             this.txtNombreServicio.Size = new System.Drawing.Size(309, 22);
             this.txtNombreServicio.TabIndex = 7;
             // 
             // txtCodigoServicio
             // 
-            this.txtCodigoServicio.Location = new System.Drawing.Point(175, 29);
+            this.txtCodigoServicio.Location = new System.Drawing.Point(193, 28);
             this.txtCodigoServicio.Name = "txtCodigoServicio";
             this.txtCodigoServicio.Size = new System.Drawing.Size(309, 22);
             this.txtCodigoServicio.TabIndex = 6;
