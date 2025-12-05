@@ -50,6 +50,7 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.lbTitulo = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompra)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -72,7 +73,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(38, 547);
+            this.btnSalir.Location = new System.Drawing.Point(677, 547);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(145, 42);
@@ -119,7 +120,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(403, 120);
+            this.dateTimePicker1.Location = new System.Drawing.Point(403, 114);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(144, 20);
@@ -246,7 +247,7 @@
             // 
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(275, 547);
+            this.btnRegistrar.Location = new System.Drawing.Point(38, 547);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(145, 42);
             this.btnRegistrar.TabIndex = 6;
@@ -281,12 +282,24 @@
             this.pictureBoxLogo.TabIndex = 7;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(189, 547);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 42);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Salir";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(889, 614);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.lbTitulo);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.groupBox1);
@@ -327,6 +340,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
