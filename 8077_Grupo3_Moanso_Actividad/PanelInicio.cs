@@ -131,7 +131,7 @@ namespace _8077_Grupo3_Moanso_Actividad
 
         private void btnReObra_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new Requerimiento_Obra());
+            
         }
     }
 }
