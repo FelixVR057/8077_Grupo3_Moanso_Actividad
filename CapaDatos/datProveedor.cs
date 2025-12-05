@@ -13,8 +13,8 @@ using System.Threading.Tasks;
         #region Singleton
         public class datProveedor
         {
-            // Pega aquí TU cadena de conexión correcta (con punto . o SQLEXPRESS)
-            private string cadenaConexion = "Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=BD_DyR_Grupo_03;Integrated Security=True";
+            
+            private string cadenaConexion = "Data Source=DESKTOP-6LPI827\\NICOLAS;Initial Catalog=BD_DyR_Grupo_03;Integrated Security=True";
 
             public void Registrar(entProveedor obj)
             {

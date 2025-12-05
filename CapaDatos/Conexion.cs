@@ -22,7 +22,7 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB; Initial Catalog = BD_DyR_Grupo_03;" +//"User ID=sa; Password=1234";
+            cn.ConnectionString = "Data Source=DESKTOP-6LPI827\\NICOLAS; Initial Catalog = BD_DyR_Grupo_03;" +//"User ID=sa; Password=1234";
              "Integrated Security=true";
 
             return cn;

@@ -8,7 +8,7 @@ namespace CapaDatos
     public class CD_Cronograma
     {
         // Asegúrate de poner aquí tu cadena de conexión correcta
-        private string cadenaConexion = "Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=BD_DyR_Grupo_03;Integrated Security=True";
+        private string cadenaConexion = "Data Source=DESKTOP-6LPI827\\NICOLAS;Initial Catalog=BD_DyR_Grupo_03;Integrated Security=True";
 
         public void RegistrarCronograma(Cronograma obj)
         {
@@ -36,11 +36,9 @@ namespace CapaDatos
                 }
             }
         }
-        // Asegúrate de tener: using System.Data; y using System.Data.SqlClient;
 
         public DataTable Listar()
         {
-            // Usa la misma cadena de conexión que ya te funcionó
             using (SqlConnection oConexion = new SqlConnection(cadenaConexion))
             {
                 SqlCommand cmd = new SqlCommand("spListarCronograma", oConexion);
