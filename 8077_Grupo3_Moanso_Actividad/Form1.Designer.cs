@@ -60,7 +60,7 @@
             this.dgvCompra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCompra.Location = new System.Drawing.Point(38, 329);
-            this.dgvCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCompra.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCompra.Name = "dgvCompra";
             this.dgvCompra.RowHeadersWidth = 62;
             this.dgvCompra.RowTemplate.Height = 28;
@@ -73,7 +73,7 @@
             this.btnSalir.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(38, 547);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(145, 42);
             this.btnSalir.TabIndex = 4;
@@ -98,9 +98,9 @@
             this.groupBox1.Controls.Add(this.lbCantidad);
             this.groupBox1.Controls.Add(this.lbProveedor);
             this.groupBox1.Location = new System.Drawing.Point(38, 101);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(784, 215);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -120,7 +120,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(403, 120);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(144, 20);
             this.dateTimePicker1.TabIndex = 17;
@@ -128,7 +128,7 @@
             // txtRuc
             // 
             this.txtRuc.Location = new System.Drawing.Point(400, 32);
-            this.txtRuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRuc.Margin = new System.Windows.Forms.Padding(2);
             this.txtRuc.Name = "txtRuc";
             this.txtRuc.Size = new System.Drawing.Size(105, 20);
             this.txtRuc.TabIndex = 16;
@@ -156,7 +156,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(640, 21);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 34);
             this.button1.TabIndex = 6;
@@ -246,7 +246,7 @@
             // 
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(667, 28);
+            this.btnRegistrar.Location = new System.Drawing.Point(275, 547);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(145, 42);
             this.btnRegistrar.TabIndex = 6;
