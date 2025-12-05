@@ -94,7 +94,9 @@
     <Compile Include="NotaSalidaMaterial.Designer.cs">
       <DependentUpon>NotaSalidaMaterial.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelInicio.cs" />
+    <Compile Include="PanelInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PanelInicio.Designer.cs">
       <DependentUpon>PanelInicio.cs</DependentUpon>
     </Compile>
