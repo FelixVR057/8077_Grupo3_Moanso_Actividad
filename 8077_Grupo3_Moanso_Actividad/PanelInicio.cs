@@ -106,7 +106,7 @@ namespace _8077_Grupo3_Moanso_Actividad
 
         private void btnCronograma_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new Mantenedor_CronogramaObra());
+            
         }
 
         private void btnServicio_Click(object sender, EventArgs e)
