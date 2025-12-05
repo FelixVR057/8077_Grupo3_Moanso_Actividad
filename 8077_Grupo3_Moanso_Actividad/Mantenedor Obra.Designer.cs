@@ -46,8 +46,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -95,7 +95,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 73);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Eliminar";
+            this.button3.Text = "Inhabilitar";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -239,6 +239,14 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(427, 59);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(294, 125);
+            this.textBox5.TabIndex = 18;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -249,14 +257,6 @@
             this.label7.Size = new System.Drawing.Size(78, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "Descripción:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(427, 59);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(294, 125);
-            this.textBox5.TabIndex = 18;
             // 
             // label8
             // 

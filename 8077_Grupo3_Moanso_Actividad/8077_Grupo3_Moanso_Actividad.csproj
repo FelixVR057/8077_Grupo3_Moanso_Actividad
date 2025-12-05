@@ -70,11 +70,11 @@
     <Compile Include="Login_Ingresar.Designer.cs">
       <DependentUpon>Login_Ingresar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenedor CronogramaObra.cs">
+    <Compile Include="CronogramaObra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mantenedor CronogramaObra.Designer.cs">
-      <DependentUpon>Mantenedor CronogramaObra.cs</DependentUpon>
+    <Compile Include="CronogramaObra.Designer.cs">
+      <DependentUpon>CronogramaObra.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenedor Material.cs">
       <SubType>Form</SubType>
@@ -132,8 +132,8 @@
     <EmbeddedResource Include="Login_Ingresar.resx">
       <DependentUpon>Login_Ingresar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenedor CronogramaObra.resx">
-      <DependentUpon>Mantenedor CronogramaObra.cs</DependentUpon>
+    <EmbeddedResource Include="CronogramaObra.resx">
+      <DependentUpon>CronogramaObra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor Material.resx">
       <DependentUpon>Mantenedor Material.cs</DependentUpon>

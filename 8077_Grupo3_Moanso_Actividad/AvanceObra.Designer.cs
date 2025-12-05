@@ -35,7 +35,6 @@
             this.cbNivelPrioridad = new System.Windows.Forms.ComboBox();
             this.lblNivelPrioridad = new System.Windows.Forms.Label();
             this.btnBuscarObra = new System.Windows.Forms.Button();
-            this.cbActividad = new System.Windows.Forms.ComboBox();
             this.btnLimpiarDatos = new System.Windows.Forms.Button();
             this.txtCodObra = new System.Windows.Forms.TextBox();
             this.lbFechaAvance = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.btnVolver = new System.Windows.Forms.Button();
             this.dgvMantenedorMat = new System.Windows.Forms.DataGridView();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gbDatosAvance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMantenedorMat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -54,13 +54,13 @@
             // gbDatosAvance
             // 
             this.gbDatosAvance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gbDatosAvance.Controls.Add(this.textBox1);
             this.gbDatosAvance.Controls.Add(this.dtpFechaAvance);
             this.gbDatosAvance.Controls.Add(this.lbEstadoObra);
             this.gbDatosAvance.Controls.Add(this.cbEstadoObra);
             this.gbDatosAvance.Controls.Add(this.cbNivelPrioridad);
             this.gbDatosAvance.Controls.Add(this.lblNivelPrioridad);
             this.gbDatosAvance.Controls.Add(this.btnBuscarObra);
-            this.gbDatosAvance.Controls.Add(this.cbActividad);
             this.gbDatosAvance.Controls.Add(this.btnLimpiarDatos);
             this.gbDatosAvance.Controls.Add(this.txtCodObra);
             this.gbDatosAvance.Controls.Add(this.lbFechaAvance);
@@ -135,14 +135,6 @@
             this.btnBuscarObra.TabIndex = 15;
             this.btnBuscarObra.Text = "Buscar Obra";
             this.btnBuscarObra.UseVisualStyleBackColor = false;
-            // 
-            // cbActividad
-            // 
-            this.cbActividad.FormattingEnabled = true;
-            this.cbActividad.Location = new System.Drawing.Point(171, 57);
-            this.cbActividad.Name = "cbActividad";
-            this.cbActividad.Size = new System.Drawing.Size(319, 21);
-            this.cbActividad.TabIndex = 16;
             // 
             // btnLimpiarDatos
             // 
@@ -240,6 +232,13 @@
             this.pictureBoxLogo.TabIndex = 12;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(171, 57);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(175, 20);
+            this.textBox1.TabIndex = 22;
+            // 
             // AvanceObra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,7 +264,6 @@
 
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.GroupBox gbDatosAvance;
-        private System.Windows.Forms.ComboBox cbActividad;
         private System.Windows.Forms.Button btnLimpiarDatos;
         private System.Windows.Forms.TextBox txtCodObra;
         private System.Windows.Forms.Label lbFechaAvance;
@@ -281,5 +279,6 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.DataGridView dgvMantenedorMat;
         private System.Windows.Forms.Button btnBuscarObra;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
