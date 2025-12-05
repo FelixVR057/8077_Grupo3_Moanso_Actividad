@@ -36,7 +36,6 @@
             this.dgvMantenedorMat = new System.Windows.Forms.DataGridView();
             this.dtpFechaAvance = new System.Windows.Forms.DateTimePicker();
             this.lbEstadoObra = new System.Windows.Forms.Label();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.cbEstadoObra = new System.Windows.Forms.ComboBox();
             this.btnAnular = new System.Windows.Forms.Button();
             this.txtCodObra = new System.Windows.Forms.TextBox();
@@ -66,7 +65,6 @@
             this.gbDatosAvance.Controls.Add(this.dgvMantenedorMat);
             this.gbDatosAvance.Controls.Add(this.dtpFechaAvance);
             this.gbDatosAvance.Controls.Add(this.lbEstadoObra);
-            this.gbDatosAvance.Controls.Add(this.btnNuevo);
             this.gbDatosAvance.Controls.Add(this.cbEstadoObra);
             this.gbDatosAvance.Controls.Add(this.btnAnular);
             this.gbDatosAvance.Controls.Add(this.txtCodObra);
@@ -92,12 +90,12 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(838, 72);
+            this.button1.Location = new System.Drawing.Point(838, 23);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(248, 50);
             this.button1.TabIndex = 23;
-            this.button1.Text = "Regsitrar";
+            this.button1.Text = "Generar";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // lbStock
@@ -139,17 +137,6 @@
             this.lbEstadoObra.Size = new System.Drawing.Size(127, 17);
             this.lbEstadoObra.TabIndex = 20;
             this.lbEstadoObra.Text = "Estado de Obra:";
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnNuevo.Location = new System.Drawing.Point(838, 14);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(248, 50);
-            this.btnNuevo.TabIndex = 12;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = false;
             // 
             // cbEstadoObra
             // 
@@ -210,7 +197,7 @@
             // 
             this.lbTituloMat.AutoSize = true;
             this.lbTituloMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTituloMat.Location = new System.Drawing.Point(395, 36);
+            this.lbTituloMat.Location = new System.Drawing.Point(460, 39);
             this.lbTituloMat.Name = "lbTituloMat";
             this.lbTituloMat.Size = new System.Drawing.Size(298, 46);
             this.lbTituloMat.TabIndex = 29;
@@ -244,7 +231,6 @@
         private System.Windows.Forms.DataGridView dgvMantenedorMat;
         private System.Windows.Forms.DateTimePicker dtpFechaAvance;
         private System.Windows.Forms.Label lbEstadoObra;
-        private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.ComboBox cbEstadoObra;
         private System.Windows.Forms.Button btnAnular;
         private System.Windows.Forms.TextBox txtCodObra;
