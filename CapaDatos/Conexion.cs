@@ -18,7 +18,7 @@ namespace CapaDatos
         {
             return new SqlConnection(
 
-                "Data Source=.; Initial Catalog=BD_DyR_Grupo_03_Prueba; Integrated Security=True;"
+                "Data Source=DESKTOP-6LPI827\\NICOLAS; Initial Catalog=BD_DyR_Grupo_03_Prueba; Integrated Security=True;"
 
             );
         }
