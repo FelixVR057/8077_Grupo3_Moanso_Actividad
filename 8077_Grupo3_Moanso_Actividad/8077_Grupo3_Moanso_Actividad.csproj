@@ -120,12 +120,6 @@
     <EmbeddedResource Include="AvanceObra.resx">
       <DependentUpon>AvanceObra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login Registro.resx">
-      <DependentUpon>Login Registro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login_Ingresar.resx">
       <DependentUpon>Login_Ingresar.cs</DependentUpon>
     </EmbeddedResource>
