@@ -45,6 +45,7 @@
     <Compile Include="datCompra.cs" />
     <Compile Include="datCronograma.cs" />
     <Compile Include="datProveedor.cs" />
+    <Compile Include="datUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

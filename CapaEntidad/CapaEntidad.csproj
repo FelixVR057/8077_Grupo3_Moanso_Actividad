@@ -45,6 +45,7 @@
     <Compile Include="entCompra.cs" />
     <Compile Include="entCronograma.cs" />
     <Compile Include="entProveedor.cs" />
+    <Compile Include="entUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
