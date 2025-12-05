@@ -94,6 +94,10 @@
     <Compile Include="NotaSalidaMaterial.Designer.cs">
       <DependentUpon>NotaSalidaMaterial.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelInicio.cs" />
+    <Compile Include="PanelInicio.Designer.cs">
+      <DependentUpon>PanelInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requerimiento Material.cs">
@@ -131,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NotaSalidaMaterial.resx">
       <DependentUpon>NotaSalidaMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelInicio.resx">
+      <DependentUpon>PanelInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
