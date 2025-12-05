@@ -94,6 +94,12 @@
     <Compile Include="MantenedorProveedor.Designer.cs">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorServicios.Designer.cs">
+      <DependentUpon>MantenedorServicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="NotaIngresoMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProveedor.resx">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorServicios.resx">
+      <DependentUpon>MantenedorServicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NotaIngresoMaterial.resx">
       <DependentUpon>NotaIngresoMaterial.cs</DependentUpon>
