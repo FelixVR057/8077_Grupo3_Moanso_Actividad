@@ -41,7 +41,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -85,7 +84,6 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -179,7 +177,7 @@
             this.textBox4.Location = new System.Drawing.Point(697, 28);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(67, 23);
+            this.textBox4.Size = new System.Drawing.Size(270, 23);
             this.textBox4.TabIndex = 9;
             // 
             // comboBox1
@@ -189,14 +187,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(253, 24);
             this.comboBox1.TabIndex = 10;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(770, 29);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 11;
             // 
             // label5
             // 
@@ -213,7 +203,7 @@
             this.textBox5.Location = new System.Drawing.Point(523, 119);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(325, 124);
+            this.textBox5.Size = new System.Drawing.Size(353, 124);
             this.textBox5.TabIndex = 13;
             // 
             // button1
@@ -262,7 +252,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 55);
             this.button2.TabIndex = 33;
-            this.button2.Text = "Hinabilitar ";
+            this.button2.Text = "Inhabilitar  ";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -325,7 +315,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
