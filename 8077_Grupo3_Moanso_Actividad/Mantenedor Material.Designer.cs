@@ -76,23 +76,23 @@
             this.cbUndMed.FormattingEnabled = true;
             this.cbUndMed.Location = new System.Drawing.Point(171, 114);
             this.cbUndMed.Name = "cbUndMed";
-            this.cbUndMed.Size = new System.Drawing.Size(132, 21);
+            this.cbUndMed.Size = new System.Drawing.Size(132, 24);
             this.cbUndMed.TabIndex = 16;
             // 
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(228, 221);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(132, 20);
+            this.txtStock.Size = new System.Drawing.Size(132, 22);
             this.txtStock.TabIndex = 9;
             // 
             // txtDescMaterial
             // 
             this.txtDescMaterial.Location = new System.Drawing.Point(228, 84);
-            this.txtDescMaterial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescMaterial.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescMaterial.Name = "txtDescMaterial";
-            this.txtDescMaterial.Size = new System.Drawing.Size(402, 20);
+            this.txtDescMaterial.Size = new System.Drawing.Size(402, 22);
             this.txtDescMaterial.TabIndex = 1;
             // 
             // btnInhabilitarMat
@@ -108,7 +108,7 @@
             // txtCodMat
             // 
             this.txtCodMat.Location = new System.Drawing.Point(228, 31);
-            this.txtCodMat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodMat.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodMat.Name = "txtCodMat";
             this.txtCodMat.Size = new System.Drawing.Size(196, 22);
             this.txtCodMat.TabIndex = 0;
@@ -137,7 +137,7 @@
             // btnNuevoProv
             // 
             this.btnNuevoProv.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnNuevoProv.Location = new System.Drawing.Point(620, 29);
+            this.btnNuevoProv.Location = new System.Drawing.Point(614, 27);
             this.btnNuevoProv.Name = "btnNuevoProv";
             this.btnNuevoProv.Size = new System.Drawing.Size(143, 50);
             this.btnNuevoProv.TabIndex = 12;
@@ -213,7 +213,7 @@
             this.lbTituloMat.Location = new System.Drawing.Point(232, 43);
             this.lbTituloMat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTituloMat.Name = "lbTituloMat";
-            this.lbTituloMat.Size = new System.Drawing.Size(356, 37);
+            this.lbTituloMat.Size = new System.Drawing.Size(440, 46);
             this.lbTituloMat.TabIndex = 20;
             this.lbTituloMat.Text = "Registro de Materiales";
             // 
