@@ -44,6 +44,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="datCompra.cs" />
     <Compile Include="datProveedor.cs" />
+    <Compile Include="datServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +52,9 @@
       <Project>{319baa46-f44c-4853-8798-f8958a811205}</Project>
       <Name>CapaEntidad</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
